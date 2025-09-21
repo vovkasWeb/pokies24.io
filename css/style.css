@@ -57,19 +57,19 @@ body {
 	border-radius: 12px;
 	box-shadow: 0px 0px 18px 0px #ffc700d9;
 }
+.main{
+	background: url('../img/bg.jpg') center center no-repeat;
+	background-size: cover; 
+}
+.main__wrapper{
+	height: 570px;
+	display: flex;
+	align-items: center;
+	
 
-.main__wrapper {
-	position: relative;
 }
 
-.main__img {
-	width: 100%;
-	height: auto;
-}
 .main__content {
-	position: absolute;
-	top: 50%;
-	transform: translate(0, -50%);
 	padding-left: 40px;
 }
 .main__title {
@@ -322,31 +322,31 @@ body {
 	align-items: center;
 	gap: 10px;
 }
-.footer__item-form span{
-    font-weight: 400;
-    font-size:14px;
-    color: #fff;
-    line-height: 100%;
+.footer__item-form span {
+	font-weight: 400;
+	font-size: 14px;
+	color: #fff;
+	line-height: 100%;
 }
-.footer__bottom{
-    border-top: 1px solid #57626c;
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 150px;
+.footer__bottom {
+	border-top: 1px solid #57626c;
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 150px;
 }
 
-.ml-form-embedWrapper .ml-form-embedBody{
-    padding: 0px !important;
+.ml-form-embedWrapper .ml-form-embedBody {
+	padding: 0px !important;
 }
 #mlb2-30764281.ml-form-embedContainer .ml-form-align-center {
-   text-align: left !important;
+	text-align: left !important;
 }
-.ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input{
+.ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input {
 	background: transparent !important;
 	border-radius: 8px !important;
-	color: #5E778A !important;
+	color: #5e778a !important;
 	/* border: 1px solid #57626c !important;
 	
 	color: #ffffff !important;
@@ -354,11 +354,14 @@ body {
 	padding: 10px !important;
 	height: auto !important; */
 }
-.ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::placeholder{
-	color: #5E778A !important;
+.ml-form-embedWrapper
+	.ml-form-embedBody
+	.ml-form-horizontalRow
+	input::placeholder {
+	color: #5e778a !important;
 	opacity: 1 !important;
 }
-.ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:focus{
+.ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:focus {
 	border: 1px solid #ffd700 !important;
 	outline: none !important;
 }
