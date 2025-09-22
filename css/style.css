@@ -1,5 +1,7 @@
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif; 
+	-webkit-font-smoothing: antialiased; 
+	-moz-osx-font-smoothing: grayscale;
 	font-weight: 500;
 	font-style: normal;
 	font-size: 26px;
@@ -8,6 +10,10 @@ body {
 	height: 100%;
 	position: relative;
 	background-color: #00192b;
+	letter-spacing: 0;
+}
+span, div, ul, li, p, a, strong, h1, h2, h3, h4, h5, h6, button {
+	font-family: 'Poppins', sans-serif; 
 }
 .section {
 	padding: 30px 0px;
@@ -73,7 +79,7 @@ body {
 .main__title {
 	font-weight: 700;
 	font-size: clamp(26px, 5vw, 40px);
-	line-height: 130%;
+	line-height: 140%;
 	margin-bottom: 15px;
 	max-width: 620px;
 	color: #fff;
@@ -84,7 +90,7 @@ body {
 .main__text {
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 100%;
+	line-height: 140%;
 	margin-bottom: 20px;
 	max-width: 585px;
 	margin-bottom: 25px;
@@ -99,7 +105,7 @@ body {
 	padding: 7px 15px;
 	border-radius: 12px;
 	font-weight: 600;
-	line-height: 100%;
+	line-height: 140%;
 	font-size: 16px;
 	background-color: #ffd700;
 }
@@ -110,7 +116,7 @@ body {
 	text-align: center;
 	font-weight: 700;
 	font-size: clamp(20px, 5vw, 36px);
-	line-height: 130%;
+	line-height: 140%;
 	margin-bottom: 15px;
 	color: #fff;
 }
@@ -118,7 +124,7 @@ body {
 	text-align: center;
 	font-weight: 500;
 	font-size: clamp(14px, 5vw, 16px);
-	line-height: 100%;
+	line-height: 140%;
 	max-width: 620px;
 	margin: 0 auto;
 	margin-bottom: 35px;
@@ -154,7 +160,7 @@ body {
 .category__btn span {
 	font-weight: 500;
 	font-size: clamp(16px, 5vw, 22px);
-	line-height: 100%;
+	line-height: 140%;
 	color: #fff;
 }
 .category__partners-block {
@@ -189,14 +195,14 @@ body {
 .category__title-item {
 	font-family: 600;
 	font-size: clamp(16px, 5vw, 24px);
-	line-height: 100%;
+	line-height: 140%;
 	color: #fff;
 }
 
 .category__text-item {
 	font-weight: 400;
 	font-size: clamp(14px, 5vw, 16px);
-	line-height: 150%;
+	line-height: 140%;
 	color: #fff;
 	text-transform: uppercase;
 }
@@ -209,7 +215,7 @@ body {
 	border-radius: 10px;
 	font-size: 14px;
 	font-weight: 500;
-	line-height: 100%;
+	line-height: 140%;
 	padding: 7px 23px;
 }
 .category__btn-review {
@@ -245,7 +251,7 @@ body {
 	padding-top: 15px;
 	font-weight: 400;
 	font-size: 12px;
-	line-height: 130%;
+	line-height: 140%;
 	color: #405b6f;
 	width: 410px;
 }
@@ -255,7 +261,7 @@ body {
 .footer__title {
 	font-size: 16px;
 	font-weight: 600;
-	line-height: 100%;
+	line-height: 140%;
 	color: #fff;
 	margin-bottom: 20px;
 }
@@ -263,13 +269,13 @@ body {
 	padding: 5px 0;
 	font-size: 14px;
 	font-weight: 400;
-	line-height: 100%;
+	line-height: 140%;
 	color: #fff;
 }
 .footer__title-form {
 	font-weight: 600;
 	font-size: clamp(18px, 5vw, 20px);
-	line-height: 100%;
+	line-height: 140%;
 	color: #ffd700;
 	margin-bottom: 20px;
 }
@@ -288,7 +294,7 @@ body {
 	font-weight: 400;
 	font-size: 14px;
 	color: #fff;
-	line-height: 100%;
+	line-height: 140%;
 }
 .footer__bottom {
 	border-top: 1px solid #57626c;
@@ -341,7 +347,7 @@ body {
 .title__text-block {
 	font-size: clamp(22px, 5vw, 36px);
 	font-weight: 700;
-	line-height: 130%;
+	line-height: 140%;
 	color: #ffffff;
 	margin-bottom: 10px;
 }
@@ -363,7 +369,7 @@ body {
 .item__text-block {
 	font-size: clamp(14px, 5vw, 16px);
 	font-weight: 400;
-	line-height: 120%;
+	line-height: 140%;
 	color: #ffffff;
 	margin-bottom: 10px;
 	padding-left: 5px;
@@ -378,7 +384,7 @@ body {
 	display: flex;
 	font-size: clamp(14px, 5vw, 16px);
 	font-weight: 400;
-	line-height: 120%;
+	line-height: 140%;
 	color: #ffffff;
 	margin-bottom: 10px;
 }
@@ -394,7 +400,7 @@ body {
 .title__real-money {
 	font-size: clamp(22px, 5vw, 34px);
 	font-weight: 700;
-	line-height: 100%;
+	line-height: 140%;
 	margin-bottom: 10px;
 	color: #fff;
 	text-align: center;
@@ -403,7 +409,7 @@ body {
 .text__real-money {
 	font-size: clamp(14px, 5vw, 16px);
 	font-weight: 400;
-	line-height: 130%;
+	line-height: 140%;
 	width: 900px;
 	margin: 0 auto;
 	text-align: center;
@@ -413,7 +419,7 @@ body {
 	padding-top: 10px;
 	font-size: clamp(14px, 5vw, 16px);
 	font-weight: 400;
-	line-height: 130%;
+	line-height: 140%;
 	display: block;
 	text-align: center;
 	text-decoration: underline;
@@ -433,10 +439,10 @@ body {
 	border: 1px solid #b5bfc7;
 	font-size: clamp(14px, 5vw, 16px);
 	font-weight: 400;
-	line-height: 130%;
+	line-height: 140%;
 	color: #fff;
 }
-.real-money{
+.real-money {
 	padding: 30px 0;
 }
 .block__real-money {
@@ -447,26 +453,57 @@ body {
 	column-gap: 20px;
 	row-gap: 10px;
 }
-.item__real-money{
-	padding:20px 30px;
+.item__real-money {
+	padding: 20px 30px;
 	border-radius: 17px;
-	border: 1px solid #8899A5;
+	border: 1px solid #8899a5;
 }
-.head-item__real-money{
+.head-item__real-money {
 	display: flex;
 	align-items: center;
 	gap: 10px;
 	margin-bottom: 10px;
 }
-.title-item__real-money{
+.title-item__real-money {
 	font-size: clamp(20px, 5vw, 26px);
 	font-weight: 700;
-	line-height: 130%;
+	line-height: 140%;
 	color: #fff;
 }
-.text-item__real-money{
+.text-item__real-money {
 	font-size: clamp(14px, 5vw, 16px);
-	font-weight: 500;
-	line-height: 130%;
+	font-weight: 400;
+	line-height: 150%;
 	color: #fff;
+}
+/*bonuses*/
+.bonuses {
+	padding: 30px 0;
+}
+.bonuses__title {
+	font-size: clamp(22px, 5vw, 34px);
+	line-height: 140%;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.bonuses__text {
+	font-size: clamp(14px, 5vw, 16px);
+	line-height: 140%;
+	font-weight: 400;
+	color: #fff;
+	max-width: 900px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.bonuses__link {
+	font-size: clamp(14px, 5vw, 16px);
+	line-height: 140%;
+	font-weight: 400;
+	color: #fff;
+	display: block;
+	text-align: center;
+	text-decoration: underline;
 }
