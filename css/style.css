@@ -357,19 +357,40 @@ button {
 	border: 1px solid #57626c;
 	padding: 30px;
 }
-.title__text-block {
+
+.title__text-block, .main-title__text-block {
 	font-size: clamp(22px, 5vw, 36px);
 	font-weight: 700;
 	line-height: 140%;
 	color: #ffffff;
 	margin-bottom: 10px;
 }
-.text__text-block {
+
+.text__text-block,
+.main-text__text-block,
+.bottom-text__text-block {
 	font-size: clamp(14px, 5vw, 16px);
 	font-weight: 400;
 	line-height: 100%;
 	color: #ffffff;
 	margin-bottom: 10px;
+
+}
+
+.main-title__text-block{
+	text-align: center;
+}
+.main-text__text-block{
+ max-width: 750px;
+ margin: 0 auto;
+ text-align: center;
+ padding-bottom: 30px;
+}
+.bottom-text__text-block{
+ max-width: 895px;
+ margin: 0 auto;
+ text-align: center;
+ padding-top: 30px;
 }
 .list-num__text-block {
 	margin-bottom: 10px;
@@ -406,10 +427,15 @@ button {
 	color: #ffffff;
 	margin-bottom: 10px;
 }
+
 .block-mark__text-block img {
 	width: 20px;
 	height: 20px;
 	margin-right: 10px;
+}
+.wrapper-blue-text-block{
+	background: #295374;
+	border: none;
 }
 .why-demo {
 	padding: 30px 0;
@@ -559,13 +585,12 @@ button {
 	margin: 0 auto;
 	color: #fff;
 }
-
 .provider-focus {
 	padding: 30px 0px;
 }
 .title__provider-focus {
 	font-size: clamp(22px, 5vw, 34px);
-	line-height: 100%;
+	line-height: 140%;
 	font-weight: 700;
 	color: #fff;
 	margin-bottom: 10px;
@@ -583,7 +608,9 @@ button {
 	margin-bottom: 10px;
 	text-align: center;
 }
-
+.block__provider-focus{
+	padding: 30px 0;
+}
 .element__provider-focus{
 	padding: 20px;
 	background: #295374;
@@ -605,4 +632,38 @@ button {
 	line-height: 150%;
 	font-weight: 400;
 	color: #fff;
+}
+.why__provider-focus{
+	padding: 20px;
+	border-radius: 20px;
+	border: 1px solid #57626C;
+}
+.title-why__provider-focus {
+	font-size: clamp(22px, 5vw, 30px);
+	line-height: 140%;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.text-why__provider-focus {
+	font-size: clamp(14px, 5vw, 16px);
+	line-height: 140%;
+	font-weight: 400;
+	color: #fff;
+	margin-bottom: 10px;
+}
+/*practical*/
+.practical__title{
+ font-size: clamp(22px, 5vw, 34px);
+ font-weight: 700;
+ line-height: 140%;
+ color: #fff;
+ margin-bottom: 10px;
+}
+.practical__text{
+	font-size: clamp(14px,5vw,16px);
+	font-weight: 400;
+	line-height: 150%;
+	color: #fff;
+	margin-bottom:10px;
 }
