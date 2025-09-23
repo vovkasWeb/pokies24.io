@@ -371,7 +371,7 @@ button {
 .bottom-text__text-block {
 	font-size: clamp(14px, 5vw, 16px);
 	font-weight: 400;
-	line-height: 100%;
+	line-height: 150%;
 	color: #ffffff;
 	margin-bottom: 10px;
 
@@ -412,6 +412,9 @@ button {
 	color: #ffffff;
 	margin-bottom: 10px;
 	padding-left: 5px;
+}
+.last-text-block{
+	margin-bottom: 20px;
 }
 .item__text-block + .item__text-block {
 	padding-top: 10px;
