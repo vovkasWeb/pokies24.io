@@ -653,12 +653,16 @@ button {
 	margin-bottom: 10px;
 }
 /*practical*/
+.practical {
+	padding: 30px 0;
+}
 .practical__title{
  font-size: clamp(22px, 5vw, 34px);
  font-weight: 700;
  line-height: 140%;
  color: #fff;
  margin-bottom: 10px;
+ text-align: center;
 }
 .practical__text{
 	font-size: clamp(14px,5vw,16px);
@@ -666,4 +670,22 @@ button {
 	line-height: 150%;
 	color: #fff;
 	margin-bottom:10px;
+	text-align: center;
+}
+.practical__element{
+	padding: 10px;
+	border: 1px solid #57626C;
+	border-radius: 17px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.practical__element + .practical__element{
+	margin-top: 10px;
+}
+.practical__element-text{
+	font-size: clamp(14px,5vw,16px);
+	font-weight: 400;
+	line-height: 150%;
+	color: #fff;
 }
