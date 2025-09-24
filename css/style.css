@@ -48,6 +48,7 @@ button {
 	display: flex;
 	justify-content: space-between;
 	padding: 16px;
+	position: relative;
 }
 .header__list {
 	display: flex;
@@ -74,7 +75,56 @@ button {
 	background: linear-gradient(90deg, #00223b 1.44%, #0d6eb9 100%);
 	padding: 5px 15px;
 	border-radius: 12px;
-	box-shadow: 0px 0px 18px 0px #ffc700d9;
+	cursor: pointer;
+	animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+	from {
+		box-shadow: 0px 0px 18px 0px #ffc700d9;
+	}
+	to {
+		box-shadow: 0px 0px 20px 3px #ffc700;
+	}
+}
+
+/* когда кнопка нажата — убираем анимацию */
+.blink:active,
+.header__btn.clicked {
+	 animation: none;
+}
+.header__popup {
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	right: 15px;
+	bottom: -280px;
+	background: url('../img/popap-welcome.png') center center no-repeat;
+	background-size: contain; /* картинка целиком помещается */
+	border-radius: 12px;
+	padding: 0% 10px;
+	width: 630px;
+	height: 280px;
+	z-index: 10;
+	text-align: right;
+	cursor: pointer;
+	transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+.header__popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header__popup-close-btn {
+	padding: 3px 5px;
+}
+.header__popup-close-btn svg{
+	fill: #fff;
+	transition: fill 0.4s ease;
+}
+.header__popup-close-btn:hover svg{
+	fill: #ff0000;
+	
 }
 .main {
 	background: url('../img/bg.jpg') center center no-repeat;
@@ -358,7 +408,8 @@ button {
 	padding: 30px;
 }
 
-.title__text-block, .main-title__text-block {
+.title__text-block,
+.main-title__text-block {
 	font-size: clamp(22px, 5vw, 36px);
 	font-weight: 700;
 	line-height: 140%;
@@ -374,23 +425,22 @@ button {
 	line-height: 150%;
 	color: #ffffff;
 	margin-bottom: 10px;
-
 }
 
-.main-title__text-block{
+.main-title__text-block {
 	text-align: center;
 }
-.main-text__text-block{
- max-width: 750px;
- margin: 0 auto;
- text-align: center;
- padding-bottom: 30px;
+.main-text__text-block {
+	max-width: 750px;
+	margin: 0 auto;
+	text-align: center;
+	padding-bottom: 30px;
 }
-.bottom-text__text-block{
- max-width: 895px;
- margin: 0 auto;
- text-align: center;
- padding-top: 30px;
+.bottom-text__text-block {
+	max-width: 895px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 30px;
 }
 .list-num__text-block {
 	margin-bottom: 10px;
@@ -413,7 +463,7 @@ button {
 	margin-bottom: 10px;
 	padding-left: 5px;
 }
-.last-text-block{
+.last-text-block {
 	margin-bottom: 20px;
 }
 .item__text-block + .item__text-block {
@@ -436,7 +486,7 @@ button {
 	height: 20px;
 	margin-right: 10px;
 }
-.wrapper-blue-text-block{
+.wrapper-blue-text-block {
 	background: #295374;
 	border: none;
 }
@@ -611,35 +661,35 @@ button {
 	margin-bottom: 10px;
 	text-align: center;
 }
-.block__provider-focus{
+.block__provider-focus {
 	padding: 30px 0;
 }
-.element__provider-focus{
+.element__provider-focus {
 	padding: 20px;
 	background: #295374;
-	border: 1px solid #57626C;
+	border: 1px solid #57626c;
 	border-radius: 17px;
 	margin-bottom: 20px;
 	display: flex;
 	gap: 20px;
 }
-.title-element__provider-focus{
+.title-element__provider-focus {
 	font-size: clamp(18px, 5vw, 26px);
 	line-height: 140%;
 	font-weight: 700;
 	color: #fff;
 	margin-bottom: 10px;
 }
-.text-element__provider-focus{
+.text-element__provider-focus {
 	font-size: clamp(14px, 5vw, 16px);
 	line-height: 150%;
 	font-weight: 400;
 	color: #fff;
 }
-.why__provider-focus{
+.why__provider-focus {
 	padding: 20px;
 	border-radius: 20px;
-	border: 1px solid #57626C;
+	border: 1px solid #57626c;
 }
 .title-why__provider-focus {
 	font-size: clamp(22px, 5vw, 30px);
@@ -659,35 +709,35 @@ button {
 .practical {
 	padding: 30px 0;
 }
-.practical__title{
- font-size: clamp(22px, 5vw, 34px);
- font-weight: 700;
- line-height: 140%;
- color: #fff;
- margin-bottom: 10px;
- text-align: center;
+.practical__title {
+	font-size: clamp(22px, 5vw, 34px);
+	font-weight: 700;
+	line-height: 140%;
+	color: #fff;
+	margin-bottom: 10px;
+	text-align: center;
 }
-.practical__text{
-	font-size: clamp(14px,5vw,16px);
+.practical__text {
+	font-size: clamp(14px, 5vw, 16px);
 	font-weight: 400;
 	line-height: 150%;
 	color: #fff;
-	margin-bottom:10px;
+	margin-bottom: 10px;
 	text-align: center;
 }
-.practical__element{
+.practical__element {
 	padding: 10px;
-	border: 1px solid #57626C;
+	border: 1px solid #57626c;
 	border-radius: 17px;
 	display: flex;
 	align-items: center;
 	gap: 10px;
 }
-.practical__element + .practical__element{
+.practical__element + .practical__element {
 	margin-top: 10px;
 }
-.practical__element-text{
-	font-size: clamp(14px,5vw,16px);
+.practical__element-text {
+	font-size: clamp(14px, 5vw, 16px);
 	font-weight: 400;
 	line-height: 150%;
 	color: #fff;
@@ -695,10 +745,11 @@ button {
 /*faq*/
 
 .faq__title {
-	font-size: clamp(32px, 5vw, 42px);
+	font-size: clamp(26px, 5vw, 36px);
 	font-weight: 700;
+	line-height: 140%;
 	text-align: center;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 .faq__title span {
 	color: #ffc700;
@@ -706,11 +757,10 @@ button {
 .faq__accordion {
 	margin-bottom: 15px;
 	padding: 20px 40px;
-	background: #10324C;
-	border: 1px solid #57626C;
+	background: #10324c;
+	border: 1px solid #57626c;
 	border-radius: 17px;
 	transition: all ease 0.3s;
-
 }
 .faq__menu-button {
 	width: 100%;
@@ -728,10 +778,10 @@ button {
 .faq__menu-button .icon {
 }
 .open {
-	color:#FFD700;
+	color: #ffd700;
 }
 .open .icon {
-	fill: #FFD700;
+	fill: #ffd700;
 }
 .icon {
 	fill: #ffffff;
