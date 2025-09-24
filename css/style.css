@@ -692,3 +692,68 @@ button {
 	line-height: 150%;
 	color: #fff;
 }
+/*faq*/
+
+.faq__title {
+	font-size: clamp(32px, 5vw, 42px);
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.faq__title span {
+	color: #ffc700;
+}
+.faq__accordion {
+	margin-bottom: 15px;
+	padding: 20px 40px;
+	background: #10324C;
+	border: 1px solid #57626C;
+	border-radius: 17px;
+	transition: all ease 0.3s;
+
+}
+.faq__menu-button {
+	width: 100%;
+	color: #ffffff;
+	font-size: clamp(16px, 5vw, 20px);
+	font-weight: 600;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: none;
+	cursor: pointer;
+	text-align: left;
+	transition: all ease 0.3s;
+}
+.faq__menu-button .icon {
+}
+.open {
+	color:#FFD700;
+}
+.open .icon {
+	fill: #FFD700;
+}
+.icon {
+	fill: #ffffff;
+	transition: all ease 0.3s;
+}
+
+.faq__title-content {
+	font-weight: 600;
+	margin-bottom: 15px;
+	display: block;
+	min-width: 100%;
+}
+
+.faq__content {
+	padding: 0 20px;
+	font-size: clamp(14px, 5vw, 16px);
+	font-weight: 400;
+	line-height: 18px;
+	transition: 0.4s;
+	height: 0;
+	overflow: hidden;
+}
+.faq__content p + p {
+	margin-top: 15px;
+}
