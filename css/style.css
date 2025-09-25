@@ -842,7 +842,7 @@ button {
 	color: #ffc700;
 }
 .faq__accordion {
-	margin-bottom: 15px;
+	margin-bottom: clamp(10px, 1vw, 15px);
 	padding: clamp(10px, 1.5vw, 15px) clamp(20px, 1vw, 40px);
 	background: #10324c;
 	border: 1px solid #57626c;
@@ -1005,6 +1005,7 @@ button {
 .faq__menu-button .icon{
 	width: 13px;
     height: 10px;
+	flex-shrink: 0;
 }
 .bonuses__item svg{
 	height:50px;
@@ -1037,9 +1038,10 @@ button {
     padding: 10px;
 	width:100%;
 }
+
 }
 @media (max-width: 450px){
-.bonuses__items{
-	grid-template-columns: repeat(1, 1fr);
-}
+    .bonuses__items {
+        grid-template-columns: repeat(1, 1fr);
+	}
 }
