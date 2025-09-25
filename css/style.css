@@ -58,12 +58,56 @@ button {
 	text-transform: uppercase;
 }
 .header__item {
-	padding: 5px;
+	padding: 10px 5px;
 	font-weight: 600;
 	font-size: 16px;
+	position: relative;
 }
 .header__item.active {
 	color: #ffd700;
+}
+.header__sublist {
+	position: absolute;
+	top: 35px;
+	padding: 20px;
+	background: #06253d;
+	border-radius: 12px;
+	border: 1px solid #57626c;
+	z-index: 10;
+	width: 250px;
+	opacity: 0;
+	transform: translateY(10px);
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+
+.header__sublist.right {
+  top: 0;
+  left: 100%;
+  transform: translateX(10px);
+}
+
+.header__subitem {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 140%;
+	color: #ffffff;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.header__list .header__item:hover > .header__sublist {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.header__list .header__item:hover > .header__sublist.right {
+  transform: translateX(0);
+}
+
+.header__subitem + .header__subitem {
+	margin-top: 5px;
 }
 .header__btn {
 	display: flex;
@@ -91,7 +135,7 @@ button {
 /* когда кнопка нажата — убираем анимацию */
 .blink:active,
 .header__btn.clicked {
-	 animation: none;
+	animation: none;
 }
 .header__popup {
 	position: absolute;
@@ -111,20 +155,19 @@ button {
 	transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 .header__popup.active {
-  opacity: 1;
-  visibility: visible;
+	opacity: 1;
+	visibility: visible;
 }
 
 .header__popup-close-btn {
 	padding: 3px 5px;
 }
-.header__popup-close-btn svg{
+.header__popup-close-btn svg {
 	fill: #fff;
 	transition: fill 0.4s ease;
 }
-.header__popup-close-btn:hover svg{
+.header__popup-close-btn:hover svg {
 	fill: #ff0000;
-	
 }
 .main {
 	background: url('../img/bg.jpg') center center no-repeat;
