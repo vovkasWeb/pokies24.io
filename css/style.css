@@ -29,7 +29,7 @@ button {
 	font-family: 'Poppins', sans-serif;
 }
 .section {
-	padding: 30px 0px;
+	padding: clamp(10px, 1vw, 30px) 0px;
 }
 
 .container {
@@ -211,7 +211,7 @@ button {
 	font-weight: 700;
 	font-size: clamp(26px, 1vw, 40px);
 	line-height: 140%;
-	margin-bottom: 15px;
+	margin-bottom: clamp(5px, 1vw, 15px);
 	max-width: 620px;
 	color: #fff;
 }
@@ -224,7 +224,7 @@ button {
 	line-height: 140%;
 	margin-bottom: 20px;
 	max-width: 585px;
-	margin-bottom: 25px;
+	margin-bottom: clamp(15px, 1vw, 25px);
 	color: #fff;
 }
 .main__text span {
@@ -258,7 +258,7 @@ button {
 	line-height: 140%;
 	max-width: 620px;
 	margin: 0 auto;
-	margin-bottom: 35px;
+	margin-bottom: clamp(15px, 1vw, 35px);
 	color: #fff;
 }
 .category__block {
@@ -478,7 +478,7 @@ button {
 }
 .wrapper__text-block {
 	background: #08263c;
-	border-radius: 20px;
+	border-radius: clamp(12px, 2vw, 20px);
 	border: 1px solid #57626c;
 	padding: clamp(20px, 2vw, 30px);
 }
@@ -509,13 +509,13 @@ button {
 	max-width: 750px;
 	margin: 0 auto;
 	text-align: center;
-	padding-bottom: 30px;
+	padding-bottom: clamp(15px, 1vw, 30px);
 }
 .bottom-text__text-block {
 	max-width: 895px;
 	margin: 0 auto;
 	text-align: center;
-	padding-top: 30px;
+	padding-top: clamp(15px, 1vw, 30px);
 }
 .list-num__text-block {
 	margin-bottom: 10px;
@@ -535,7 +535,7 @@ button {
 	font-weight: 400;
 	line-height: 140%;
 	color: #ffffff;
-	margin-bottom: 10px;
+	margin-bottom: clamp(5px, 1vw, 10px);
 	padding-left: 5px;
 }
 .last-text-block {
@@ -553,7 +553,7 @@ button {
 	font-weight: 400;
 	line-height: 140%;
 	color: #ffffff;
-	margin-bottom: 10px;
+	margin-bottom: clamp(5px, 1vw, 10px);
 }
 
 .block-mark__text-block img {
@@ -566,14 +566,14 @@ button {
 	border: none;
 }
 .why-demo {
-	padding: 30px 0;
+	padding: clamp(10px, 1vw, 30px) 0;
 }
 .title__why-demo,
 .title__real-money {
 	font-size: clamp(22px, 1vw, 34px);
 	font-weight: 700;
 	line-height: 140%;
-	margin-bottom: 10px;
+	margin-bottom: clamp(5px, 1vw, 10px);
 	color: #fff;
 	text-align: center;
 }
@@ -589,7 +589,7 @@ button {
 	color: #fff;
 }
 .btn__why-demo {
-	padding-top: 10px;
+	padding-top: clamp(5px, 1vw, 10px);
 	font-size: clamp(14px, 1vw, 16px);
 	font-weight: 400;
 	line-height: 140%;
@@ -599,15 +599,15 @@ button {
 	color: #fff;
 }
 .line__why-demo {
-	padding-top: 30px;
+	padding-top: clamp(15px, 1vw, 30px);
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
 }
 .item-line__why-demo {
-	padding: 20px;
+	padding: clamp(10px, 2vw, 20px);
 	text-align: center;
-	border-radius: 17px;
+	border-radius: clamp(12px, 2vw, 17px);
 	background: #295374;
 	border: 1px solid #b5bfc7;
 	font-size: clamp(14px, 1.5vw, 16px);
@@ -616,10 +616,10 @@ button {
 	color: #fff;
 }
 .real-money {
-	padding: 30px 0;
+	padding: clamp(10px, 1vw, 30px) 0;
 }
 .block__real-money {
-	padding-top: 30px;
+	padding-top: clamp(15px, 1vw, 30px);
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(3, auto);
@@ -627,8 +627,8 @@ button {
 	row-gap: 10px;
 }
 .item__real-money {
-	padding: 20px 30px;
-	border-radius: 17px;
+	padding: 20px clamp(20px, 1vw, 30px);
+	border-radius: clamp(12px, 2vw, 17px);
 	border: 1px solid #8899a5;
 }
 .head-item__real-money {
@@ -655,14 +655,14 @@ button {
 }
 /*bonuses*/
 .bonuses {
-	padding: 30px 0;
+	padding: clamp(10px, 1vw, 30px) 0;
 }
 .bonuses__title {
 	font-size: clamp(22px, 1vw, 34px);
 	line-height: 140%;
 	font-weight: 700;
 	color: #fff;
-	margin-bottom: 10px;
+	margin-bottom:  clamp(5px, 1vw, 10px);
 	text-align: center;
 }
 .bonuses__text {
@@ -672,7 +672,7 @@ button {
 	color: #fff;
 	max-width: 900px;
 	margin: 0 auto;
-	margin-bottom: 10px;
+	margin-bottom: clamp(5px, 1vw, 10px);
 	text-align: center;
 }
 .bonuses__link {
@@ -685,11 +685,11 @@ button {
 	text-decoration: underline;
 }
 .bonuses__items {
-	padding-top: 30px;
+	padding-top: clamp(15px, 1vw, 30px);
 	display: grid;
-	grid-template-columns: repeat(3, 1fr); /* 2 элемента в ряд */
-	grid-template-rows: repeat(2, auto); /* 3 ряда */
-	gap: 20px; /* расстояние между элементами */
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, auto);
+	gap: 20px; 
 }
 .bonuses__item {
 	padding: clamp(10px, 2vw, 20px);
@@ -719,7 +719,7 @@ button {
 	color: #fff;
 }
 .provider-focus {
-	padding: 30px 0px;
+	padding: clamp(10px, 1vw, 30px) 0px;
 }
 .title__provider-focus {
 	font-size: clamp(22px, 1vw, 34px);
@@ -739,18 +739,18 @@ button {
 	color: #fff;
 	max-width: 900px;
 	margin: 0 auto;
-	margin-bottom: 10px;
+	margin-bottom: clamp(5px, 1vw, 10px);
 	text-align: center;
 }
 .block__provider-focus {
-	padding: 30px 0;
+	padding: clamp(10px, 1vw, 30px) 0;
 }
 .element__provider-focus {
 	padding: 20px;
 	background: #295374;
 	border: 1px solid #57626c;
-	border-radius: 17px;
-	margin-bottom: 20px;
+	border-radius: clamp(12px, 2vw, 17px);
+	margin-bottom: clamp(10px, 1vw, 20px);
 	display: flex;
 	gap: 20px;
 }
@@ -759,7 +759,7 @@ button {
 	line-height: 140%;
 	font-weight: 700;
 	color: #fff;
-	margin-bottom: 10px;
+	margin-bottom: clamp(5px, 1vw, 10px);
 }
 .text-element__provider-focus {
 	font-size: clamp(14px, 1vw, 16px);
@@ -769,7 +769,7 @@ button {
 }
 .why__provider-focus {
 	padding: 20px;
-	border-radius: 20px;
+	border-radius: clamp(12px, 2vw, 20px);
 	border: 1px solid #57626c;
 }
 .title-why__provider-focus {
@@ -777,25 +777,25 @@ button {
 	line-height: 140%;
 	font-weight: 700;
 	color: #fff;
-	margin-bottom: 10px;
+	margin-bottom: clamp(5px, 1vw, 10px);
 }
 .text-why__provider-focus {
 	font-size: clamp(14px, 1vw, 16px);
 	line-height: 140%;
 	font-weight: 400;
 	color: #fff;
-	margin-bottom: 10px;
+	margin-bottom: clamp(5px, 1vw, 10px);
 }
 /*practical*/
 .practical {
-	padding: 30px 0;
+	padding: clamp(10px, 1vw, 30px) 0;
 }
 .practical__title {
 	font-size: clamp(22px, 1vw, 34px);
 	font-weight: 700;
 	line-height: 140%;
 	color: #fff;
-	margin-bottom: 10px;
+	margin-bottom: clamp(5px, 1vw, 10px);
 	text-align: center;
 }
 .practical__text {
@@ -803,13 +803,13 @@ button {
 	font-weight: 400;
 	line-height: 150%;
 	color: #fff;
-	margin-bottom: 10px;
+	margin-bottom: clamp(5px, 1vw, 10px);
 	text-align: center;
 }
 .practical__element {
 	padding: 10px;
 	border: 1px solid #57626c;
-	border-radius: 17px;
+	border-radius: clamp(12px, 2vw, 17px);
 	display: flex;
 	align-items: center;
 	gap: 10px;
@@ -819,7 +819,7 @@ button {
 	height: 30px;
 }
 .practical__element + .practical__element {
-	margin-top: 10px;
+	margin-top: clamp(5px, 1vw, 10px);
 }
 .practical__element-text {
 	font-size: clamp(14px, 1vw, 16px);
@@ -995,6 +995,11 @@ button {
 	.provider__wrapper svg{
 		max-width: 90px;
 	}
+	.category__partners-block {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+ 
+}
 }
 @media (max-width: 550px){
 .faq__menu-button .icon{
@@ -1010,5 +1015,31 @@ button {
 .footer__item-form svg{
 	width:24px;
 	height:24px;
+}
+.block__real-money {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 10px;
+}
+.element__provider-focus{
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+.element__provider-focus img{
+	width: 170px;
+	height: 80px;
+}
+.title-element__provider-focus{
+	text-align: center;
+}
+.category__btn {
+    flex: 1 1 30.5%;
+    padding: 10px;
+	width:100%;
+}
+}
+@media (max-width: 450px){
+.bonuses__items{
+	grid-template-columns: repeat(1, 1fr);
 }
 }
