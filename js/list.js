@@ -13,7 +13,7 @@ menuBtns.forEach(menuBtn => {
 		const content = menuBtn.nextElementSibling
 		if (menuBtn.classList.contains('open')) {
 			content.style.height = content.scrollHeight + 10 + 'px'
-			content.style.padding = '10px 10px 10px 0px'
+			content.style.padding = '10px 0px 10px 0px'
 			icon.style.transform = 'rotate(180deg)'
 			menuBtn.parentElement.style =
 				'background: linear-gradient(90deg, #00223B 1.44%, #0D6EB9 100%);'
