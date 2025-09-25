@@ -66,13 +66,15 @@ button {
 .header__item.active {
 	color: #ffd700;
 }
-.header__sublist {
+.header__sublist,
+.header__underlist{
 	position: absolute;
 	top: 35px;
 	padding: 20px;
 	background: #06253d;
 	border-radius: 12px;
 	border: 1px solid #57626c;
+	color: #ffffff;
 	z-index: 10;
 	width: 250px;
 	opacity: 0;
@@ -80,34 +82,54 @@ button {
 	pointer-events: none;
 	transition: all 0.3s ease;
 }
+.header__underlist{
+	width:200px;
+	top: -15px;
+	right: -175px;
+	font-weight: 400;
+	text-transform: none;
 
-.header__sublist.right {
+}
+.header__list li:hover{
+  color: #8a7600;
+  stroke: #8a7600;
+}
+
+.header__sublist.right
+.header__underlist.right {
   top: 0;
   left: 100%;
   transform: translateX(10px);
 }
 
 .header__subitem {
+	position: relative;
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 140%;
 	color: #ffffff;
+	stroke: #ffffff;
 	cursor: pointer;
 	text-transform: uppercase;
 }
 
-.header__list .header__item:hover > .header__sublist {
+.header__list .header__item:hover > .header__sublist,
+.header__sublist .header__subitem:hover> .header__underlist{
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
 }
 
-.header__list .header__item:hover > .header__sublist.right {
+.header__list .header__item:hover > .header__sublist.right,
+.header__sublist .header__subitem:hover> .header__underlist.right{
   transform: translateX(0);
 }
 
 .header__subitem + .header__subitem {
 	margin-top: 5px;
+}
+.header__subitem svg{
+  margin-left: 5px;
 }
 .header__btn {
 	display: flex;
