@@ -29,7 +29,7 @@ button {
 	font-family: 'Poppins', sans-serif;
 }
 .section {
-	padding: clamp(10px, 1vw, 30px) 0px;
+	padding: clamp(20px, 1vw, 30px) 0px;
 }
 
 .container {
@@ -473,9 +473,11 @@ button {
 }
 
 /*text-block*/
-.text-block {
-	padding: clamp(10px, 1vw, 30px) 0;
-}
+/* .text-block {
+	 padding: clamp(10px, 1vw, 30px) 0; 
+} 
+*/
+
 .wrapper__text-block {
 	background: #08263c;
 	border-radius: clamp(12px, 2vw, 20px);
@@ -565,9 +567,9 @@ button {
 	background: #295374;
 	border: none;
 }
-.why-demo {
+/* .why-demo {
 	padding: clamp(10px, 1vw, 30px) 0;
-}
+} */
 .title__why-demo,
 .title__real-money {
 	font-size: clamp(22px, 1vw, 34px);
@@ -615,9 +617,9 @@ button {
 	line-height: 140%;
 	color: #fff;
 }
-.real-money {
+/* .real-money {
 	padding: clamp(10px, 1vw, 30px) 0;
-}
+} */
 .block__real-money {
 	padding-top: clamp(15px, 1vw, 30px);
 	display: grid;
@@ -657,9 +659,9 @@ button {
 	color: #fff;
 }
 /*bonuses*/
-.bonuses {
+/* .bonuses {
 	padding: clamp(10px, 1vw, 30px) 0;
-}
+} */
 .bonuses__title {
 	font-size: clamp(22px, 1vw, 34px);
 	line-height: 140%;
@@ -721,9 +723,9 @@ button {
 	margin: 0 auto;
 	color: #fff;
 }
-.provider-focus {
+/* .provider-focus {
 	padding: clamp(10px, 1vw, 30px) 0px;
-}
+} */
 .title__provider-focus {
 	font-size: clamp(22px, 1vw, 34px);
 	line-height: 140%;
@@ -790,9 +792,9 @@ button {
 	margin-bottom: clamp(5px, 1vw, 10px);
 }
 /*practical*/
-.practical {
+/* .practical {
 	padding: clamp(10px, 1vw, 30px) 0;
-}
+} */
 .practical__title {
 	font-size: clamp(22px, 1vw, 34px);
 	font-weight: 700;
@@ -832,9 +834,9 @@ button {
 	color: #fff;
 }
 /*faq*/
-.faq{
+/* .faq{
 	padding: clamp(10px, 1vw, 30px) 0;
-}
+} */
 .faq__title {
 	font-size: clamp(26px, 1vw, 36px);
 	font-weight: 700;
