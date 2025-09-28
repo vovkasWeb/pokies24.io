@@ -602,7 +602,7 @@ button {
 	padding-top: clamp(15px, 1vw, 30px);
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
+	gap: clamp(10px, 1vw, 20px);
 }
 .item-line__why-demo {
 	padding: clamp(10px, 2vw, 20px);
@@ -637,10 +637,13 @@ button {
 	gap: 10px;
 	margin-bottom: 10px;
 }
+
 .head-item__real-money svg {
 	width: 40px;
 	height: 40px;
+	  display: inline-block;
 }
+
 .title-item__real-money {
 	font-size: clamp(20px, 1vw, 26px);
 	font-weight: 700;
@@ -814,9 +817,10 @@ button {
 	align-items: center;
 	gap: 10px;
 }
-.practical__element svg {
+.practical__element svg  {
 	width: 30px;
 	height: 30px;
+	flex-shrink: 0;  
 }
 .practical__element + .practical__element {
 	margin-top: clamp(5px, 1vw, 10px);
@@ -864,6 +868,9 @@ button {
 	transition: all ease 0.3s;
 }
 .faq__menu-button .icon {
+	width: 18px;
+	height: 10px;
+	flex-shrink: 0;
 }
 .open {
 	color: #ffd700;
@@ -1038,10 +1045,27 @@ button {
     padding: 10px;
 	width:100%;
 }
-
+.practical__element svg  {
+	width: 25px;
+	height: 25px;
+}
+.main {
+    background: url('../img/bg-mobile.jpg') no-repeat;
+	background-position: center;  /* по центру */
+	background-size: cover;       /* растянуть так, чтобы заполнила весь блок */
+	}
+	.header__wrapper{
+		padding-left: 0px;
+		padding-right:0px;
+	}
+	.line__why-demo{
+		display: flex;
+		flex-direction: column;
+	}
 }
 @media (max-width: 450px){
     .bonuses__items {
         grid-template-columns: repeat(1, 1fr);
 	}
+	
 }
