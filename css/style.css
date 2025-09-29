@@ -115,7 +115,7 @@ button {
 	font-size: 16px;
 	line-height: 140%;
 	font-weight: 600;
-	color:  #FFD700;
+	color: #FFD700;
 }
 
 .header__list-mobile-content {
@@ -1086,6 +1086,55 @@ button {
 #mlb2-30764281.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow {
 	margin: 0 !important;
 }
+
+.sliders__content {
+	padding: 30px;
+	max-width: 1350px;
+	margin: 0 auto;
+	background: #113047;
+	border-radius: 20px;
+}
+
+.sliders__line {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+
+.slider__line-left {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.slider__line-right {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.slider__line-right a {
+	padding-right: 20px;
+
+}
+
+.slider-track {
+	display: flex;
+	overflow: hidden;
+}
+
+.slide {
+	flex: 0 0 18.18%;
+	width: 100%;
+	height: auto;
+	padding: 10;
+	box-sizing: border-box;
+}
+.slider__btn.disabled {
+	background: rgba(0, 0, 0, 0.2);
+	/* светлый, "неактивный" цвет */
+}
+
 
 @media (max-width: 1250px) {
 	.footer__text {
