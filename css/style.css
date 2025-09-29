@@ -1052,6 +1052,7 @@ button {
 	height: 25px;
 }
 .main {
+	 /* background: url('../img/bg-mobile.jpg')  center/100% 100% no-repeat; */
     background: url('../img/bg-mobile.jpg') no-repeat;
 	background-position: center;  /* по центру */
 	background-size: cover;       /* растянуть так, чтобы заполнила весь блок */
@@ -1064,6 +1065,24 @@ button {
 		display: flex;
 		flex-direction: column;
 	}
+	.main__text{
+		display: none;
+	}
+	.main__content {
+    padding-left: 0; /* отступ слева */
+	}
+	.main__wrapper {
+    height: 580px;
+	text-align: center;
+    align-items: start;
+	margin: 0 auto;
+	width: 320px;
+	padding-top: 60px;
+}
+.main__title{
+margin-bottom: 20px;
+}
+
 }
 @media (max-width: 450px){
     .bonuses__items {
