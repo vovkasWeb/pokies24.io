@@ -11,7 +11,7 @@ popupCloseBtn.addEventListener('click', () => {
     header_btn.classList.remove('clicked');
 });
 popup.addEventListener('click', (e) => {
-   if(e.target.classList[0] === 'header__popup') {
+   if(e.target.classList[0] !== 'header__popup-close-btn') {
         window.location.replace('https://example.com')
    }
 });
