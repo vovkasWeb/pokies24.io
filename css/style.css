@@ -1134,6 +1134,9 @@ button {
 	color: #FFD700;
 	text-transform: uppercase;
 }
+.sliders__content + .sliders__content{
+	margin-top: 20px;
+}
 
 .slider-track {
 	display: flex;
@@ -1258,6 +1261,17 @@ button {
 .slider__info-link-play {
 	background: #FFC700;
 	color: #000000;
+}
+.slider__info.two{
+	background: #103956ce;
+	backdrop-filter: blur(8px)
+}
+.slider__info-link.two{
+	width: 100%;
+	background: #FFC700;
+	border-radius: 10px;
+	color: #000000;
+	text-align: center;
 }
 
 
