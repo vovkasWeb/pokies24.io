@@ -12,6 +12,6 @@ popupCloseBtn.addEventListener('click', () => {
 });
 popup.addEventListener('click', (e) => {
    if(e.target.classList[0] !== 'header__popup-close-btn') {
-        window.location.replace('https://example.com')
+        window.location.replace('https://pokies-cwn.com/RcQV7m')
    }
 });
