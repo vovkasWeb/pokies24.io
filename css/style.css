@@ -1195,12 +1195,13 @@ button {
 	right: 0;
 	bottom: 0;
 	padding: 10px 15px;
+	margin: 0 5px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	box-sizing: border-box;
 	border: 1px solid #657E90;
-	border-radius: 20px;
+	border-radius: 16px;
 	background: #103956;
 
 }
@@ -1242,7 +1243,7 @@ button {
 
 .slider__info-link {
 	border-radius: 10px;
-	padding: 8px 14px;
+	padding: 8px 10px;
 	font-size: clamp(14px, 1vw, 14px);
 	font-weight: 400;
 	line-height: 140%;
