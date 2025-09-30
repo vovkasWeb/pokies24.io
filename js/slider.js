@@ -1,8 +1,27 @@
-const slider = document.querySelector('.slider-track');
-const btnLeft = document.querySelector('.slider-btn-left');
-const btnRight = document.querySelector('.slider-btn-right');
+document.querySelectorAll('.sliders__content').forEach(sliderWripper => {
+const slider = sliderWripper.querySelector('.slider-track');
+const btnLeft = sliderWripper.querySelector('.slider-btn-left');
+const btnRight = sliderWripper.querySelector('.slider-btn-right');
+const sliderWrapper = sliderWripper.querySelector('.slider-wrapper');
 
-const slideWidth = slider.querySelector('.slide').offsetWidth + 10; // gap
+let slideWidth;
+
+function updateSlideWidth() {
+    slideWidth = slider.querySelector('.slide').offsetWidth;
+    sliderWrapper.style.setProperty('--after-width', `${slideWidth / 2}px`);
+}
+function scrollRight() {
+    slider.scrollBy({ left: slideWidth, behavior: 'smooth' });
+}
+function scrollLeft() {
+    if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 1) {
+        slider.scrollBy({ left: -slideWidth / 2, behavior: 'smooth' });
+    }
+    else{
+        slider.scrollBy({ left: -slideWidth, behavior: 'smooth' });
+    }
+}
+
 
 function updateButtons() {
   // Слайдер в начале
@@ -20,17 +39,18 @@ function updateButtons() {
   }
 }
 
+
 // Прокрутка кнопками
-btnRight.addEventListener('click', () => {
-  slider.scrollBy({ left: slideWidth, behavior: 'smooth' });
-});
-
-btnLeft.addEventListener('click', () => {
-  slider.scrollBy({ left: -slideWidth, behavior: 'smooth' });
-});
-
-// Обновление кнопок при скролле мышью или тачем
+btnRight.addEventListener('click', scrollRight);
+btnLeft.addEventListener('click',scrollLeft);
 slider.addEventListener('scroll', updateButtons);
 
 // Инициализация состояния
-updateButtons();
+  updateSlideWidth();
+  updateButtons();
+
+window.addEventListener('resize', () => {
+    updateSlideWidth();
+    updateButtons();
+  });
+})
