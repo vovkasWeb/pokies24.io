@@ -943,7 +943,7 @@ button {
 .text-element__provider-focus {
 	font-size: clamp(14px, 1vw, 16px);
 	line-height: 150%;
-	font-weight: 400;
+	font-weight: 500;
 	color: #fff;
 }
 
@@ -1102,6 +1102,10 @@ button {
 #mlb2-30764281.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow {
 	margin: 0 !important;
 }
+#mlb2-30764281.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button {
+	font-weight: 600 !important;
+}
+
 
 .sliders {
 	padding: clamp(40px, 1vw, 60px) 0px clamp(20px, 1vw, 60px) 0px;
@@ -1194,12 +1198,6 @@ button {
 	position: relative;
 }
 
-/* .slider-track .slide:first-child {
-	padding-left: 0px;
-}
-.slider-track .slide:last-child {
-	padding-right: 0px;
-} */
 .slide img {
 	width: 100%;
 	height: 100%;
@@ -1265,7 +1263,7 @@ button {
 	border-radius: clamp(7px, 0.3vw, 9px);
 	padding: clamp(4px, 0.3vw, 8px) clamp(7px, 0.3vw, 9px);
 	font-size: clamp(11px, 1vw, 14px);
-	font-weight: 400;
+	font-weight: 500;
 	line-height: 140%;
 }
 
