@@ -1,7 +1,7 @@
 export const category = {
 	slots: [
 		{
-			img: { url: './img/partners/caswino.png', alt: 'Caswino Casino Logo' },
+			img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
 			title: 'Caswino',
 			text: '600% up to 4800$ <br> + 255 Free spins',
 			btns: {
@@ -10,7 +10,7 @@ export const category = {
 			},
 		},
 		{
-			img: { url: './img/partners/bgm.png', alt: 'BDM bet Logo' },
+			img: { url: './img/partners/bgm.webp', alt: 'BDM bet Logo' },
 			title: 'BDM Bet',
 			text: 'up to AU$4,000 <br> + 150 Free Spins',
 			btns: {
@@ -19,7 +19,7 @@ export const category = {
 			},
 		},
 		{
-			img: { url: './img/partners/neospin.png', alt: 'Neospin Casino Logo' },
+			img: { url: './img/partners/neospin.webp', alt: 'Neospin Casino Logo' },
 			title: 'Neospin',
 			text: '100% up to AU$6,000 <br> + 100 Free Spins',
 			btns: {
@@ -28,7 +28,7 @@ export const category = {
 			},
 		},
 		{
-			img: { url: './img/partners/richard.png', alt: 'CrownSlots Logo' },
+			img: { url: './img/partners/richard.webp', alt: 'CrownSlots Logo' },
 			title: 'Richard Casino',
 			text: 'up to AU$5,000 <br> + 500 Free Spins',
 			btns: {
@@ -39,7 +39,7 @@ export const category = {
 	],
 	roulette: [
 		{
-			img: { url: './img/partners/crown.png', alt: 'Richard Casino Logo' },
+			img: { url: './img/partners/crown.webp', alt: 'Richard Casino Logo' },
 			title: 'Crown Slots',
 			text: '400% up to AU$4,000 <br> + 250 Free Spins',
 			btns: {
@@ -48,7 +48,7 @@ export const category = {
 			},
 		},
 		{
-			img: { url: './img/partners/oscarspin.png', alt: 'Oscarspin Logo' },
+			img: { url: './img/partners/oscarspin.webp', alt: 'Oscarspin Logo' },
 			title: 'Oscarspin',
 			text: 'up to AU$4,000 <br> + 225 Free Spins',
 			btns: {
@@ -57,7 +57,7 @@ export const category = {
 			},
 		},
 		{
-			img: { url: './img/partners/hugo.png', alt: 'Hugo casino Logo' },
+			img: { url: './img/partners/hugo.webp', alt: 'Hugo casino Logo' },
 			title: 'Hugo',
 			text: '225% up to AU$1,000 <br> + 275 Free Spins',
 			btns: {
@@ -66,7 +66,7 @@ export const category = {
 			},
 		},
 		{
-			img: { url: './img/partners/axe.png', alt: 'Axe Casino Logo' },
+			img: { url: './img/partners/axe.webp', alt: 'Axe Casino Logo' },
 			title: 'Axe Casino',
 			text: 'up to AU$5,625 <br> + 200 Free Spins',
 			btns: {
@@ -77,7 +77,7 @@ export const category = {
 	],
 	blackjack: [
 		{
-			img: { url: './img/partners/caswino.png', alt: 'Caswino Casino Logo' },
+			img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
 			title: 'Caswino',
 			text: '600% UP TO 4800$ <br> +255 FREE SPINS',
 			btns: {
@@ -86,7 +86,7 @@ export const category = {
 			},
 		},
 		{
-			img: { url: './img/partners/sky.png', alt: 'Skycrown Logo' },
+			img: { url: './img/partners/sky.webp', alt: 'Skycrown Logo' },
 			title: 'SkyCrown',
 			text: 'up to AU$8,000 <br> + 400 Free Spins',
 			btns: {
@@ -95,7 +95,7 @@ export const category = {
 			},
 		},
 		{
-			img: { url: './img/partners/rockwin.png', alt: 'Rockwin casino' },
+			img: { url: './img/partners/rockwin.webp', alt: 'Rockwin casino' },
 			title: 'Rockwin Casino',
 			text: 'up to AU$6,000 <br> + 400 Free Spins',
 			btns: {
@@ -104,7 +104,7 @@ export const category = {
 			},
 		},
 		{
-			img: { url: './img/partners/neospin.png', alt: 'Neospin Casino Logo' },
+			img: { url: './img/partners/neospin.webp', alt: 'Neospin Casino Logo' },
 			title: 'Neospin',
 			text: '600% UP TO 4800$ <br> +255 FREE SPINS',
 			btns: {
@@ -115,7 +115,7 @@ export const category = {
 	],
 	poker: [
 		{
-			img: { url: './img/partners/caswino.png', alt: 'Caswino Casino Logo' },
+			img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
 			title: 'Caswino',
 			text: '600% UP TO 4800$ <br> +255 FREE SPINS',
 			btns: {
@@ -124,7 +124,7 @@ export const category = {
 			},
 		},
 		{
-			img: { url: './img/partners/axe.png', alt: 'Axe Casino Logo' },
+			img: { url: './img/partners/axe.webp', alt: 'Axe Casino Logo' },
 			title: 'Axe Casino',
 			text: 'up to AU$5,625 <br> + 200 Free Spins',
 			btns: {
@@ -133,7 +133,7 @@ export const category = {
 			},
 		},
 		{
-			img: { url: './img/partners/bgm.png', alt: 'BDM bet Logo' },
+			img: { url: './img/partners/bgm.webp', alt: 'BDM bet Logo' },
 			title: 'BDM Bet',
 			text: 'up to AU$4,000 <br> + 150 Free Spins',
 			btns: {
@@ -142,7 +142,7 @@ export const category = {
 			},
 		},
 		{
-			img: { url: './img/partners/rockwin.png', alt: 'Rockwin casino' },
+			img: { url: './img/partners/rockwin.webp', alt: 'Rockwin casino' },
 			title: 'Rockwin Casino',
 			text: 'up to AU$6,000 <br> + 400 Free Spins',
 			btns: {
@@ -153,7 +153,7 @@ export const category = {
 	],
 	baccarat: [
 		{
-			img: { url: './img/partners/crown.png', alt: 'CrownSlots Logo' },
+			img: { url: './img/partners/crown.webp', alt: 'CrownSlots Logo' },
 			title: 'Crown Slots',
 			text: '400% up to AU$4,000 <br> + 250 Free Spins',
 			btns: {
@@ -162,7 +162,7 @@ export const category = {
 			},
 		},
 		{
-			img: { url: './img/partners/sky.png', alt: 'Skycrown Logo' },
+			img: { url: './img/partners/sky.webp', alt: 'Skycrown Logo' },
 			title: 'SkyCrown',
 			text: 'up to AU$8,000 <br> + 400 Free Spins',
 			btns: {
@@ -171,7 +171,7 @@ export const category = {
 			},
 		},
 		{
-			img: { url: './img/partners/hugo.png', alt: 'Hugo casino Logo' },
+			img: { url: './img/partners/hugo.webp', alt: 'Hugo casino Logo' },
 			title: 'Hugo',
 			text: '225% up to AU$1,000 <br> + 275 Free Spins',
 			btns: {
@@ -180,7 +180,7 @@ export const category = {
 			},
 		},
 		{
-			img: { url: './img/partners/richard.png', alt: ' Richard Casino Logo' },
+			img: { url: './img/partners/richard.webp', alt: ' Richard Casino Logo' },
 			title: 'Richard Casino',
 			text: 'up to AU$5,000 <br> + 500 Free Spins',
 			btns: {
