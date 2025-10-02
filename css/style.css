@@ -436,6 +436,8 @@ button {
 
 .category__img-item img {
 	width: 100%;
+	max-width: 150px;
+	max-height: 150px;
 	height: auto;
 }
 
@@ -597,12 +599,6 @@ button {
 	background: transparent !important;
 	border-radius: 8px !important;
 	color: #5e778a !important;
-	/* border: 1px solid #57626c !important;
-	
-	color: #ffffff !important;
-	font-size: 14px !important;
-	padding: 10px !important;
-	height: auto !important; */
 }
 
 .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::placeholder {
@@ -615,11 +611,6 @@ button {
 	outline: none !important;
 }
 
-/*text-block*/
-/* .text-block {
-	 padding: clamp(10px, 1vw, 30px) 0; 
-} 
-*/
 
 .wrapper__text-block {
 	background: #08263c;
@@ -722,9 +713,6 @@ button {
 	border: none;
 }
 
-/* .why-demo {
-	padding: clamp(10px, 1vw, 30px) 0;
-} */
 .title__why-demo,
 .title__real-money {
 	font-size: clamp(22px, 2.5vw, 34px);
@@ -777,9 +765,6 @@ button {
 	color: #fff;
 }
 
-/* .real-money {
-	padding: clamp(10px, 1vw, 30px) 0;
-} */
 .block__real-money {
 	padding-top: clamp(15px, 1vw, 30px);
 	display: grid;
@@ -824,10 +809,6 @@ button {
 	color: #fff;
 }
 
-/*bonuses*/
-/* .bonuses {
-	padding: clamp(10px, 1vw, 30px) 0;
-} */
 .bonuses__title {
 	font-size: clamp(22px, 2.5vw, 34px);
 	line-height: 140%;
@@ -897,9 +878,6 @@ button {
 	color: #fff;
 }
 
-/* .provider-focus {
-	padding: clamp(10px, 1vw, 30px) 0px;
-} */
 .title__provider-focus {
 	font-size: clamp(22px, 2.5vw, 34px);
 	line-height: 140%;
@@ -983,10 +961,6 @@ button {
 	margin-bottom: clamp(5px, 1vw, 10px);
 }
 
-/*practical*/
-/* .practical {
-	padding: clamp(10px, 1vw, 30px) 0;
-} */
 .practical__title {
 	font-size: clamp(22px, 2.5vw, 34px);
 	font-weight: 700;
@@ -1536,12 +1510,9 @@ button {
 	}
 
 	.main {
-		/* background: url('../img/bg-mobile.jpg')  center/100% 100% no-repeat; */
 		background: url('../img/bg-mobile.jpg') no-repeat;
 		background-position: center;
-		/* по центру */
 		background-size: cover;
-		/* растянуть так, чтобы заполнила весь блок */
 	}
 
 	.header__wrapper {
@@ -1560,7 +1531,6 @@ button {
 
 	.main__content {
 		padding-left: 0;
-		/* отступ слева */
 	}
 
 	.main__wrapper {
@@ -1587,7 +1557,6 @@ button {
 		width: 100%;
 		height: 100%;
 	}
-
 	.slider__line-left {
 		gap: 3px;
 	}
@@ -1614,14 +1583,17 @@ button {
 		height: 180px;
 	}
 
-	
-		.slide img {
-			width: 170px;
-			height: 170px;
-		}
+	.slide img {
+		width: 170px;
+		height: 170px;
+	}
 
 	.slider__info-link {
-		font-size: 12px;
+		font-size: 13px;
+	}
+	.slide .slider__contener{
+		width: 170px;
+		height: 170px;
 	}
 
 	.provider__wrapper a {
@@ -1629,13 +1601,10 @@ button {
 		height: auto;
 	}
 
+
 }
 
-
 @media (max-width: 400px) {
-	/* .slide {
-		flex: 0 0 62.5%;
-	} */
 
 	.provider__wrapper a {
 		max-width: 73px;
