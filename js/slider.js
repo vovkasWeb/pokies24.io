@@ -53,26 +53,43 @@ slider.addEventListener('scroll', updateButtons);
 
 
 
-function enableSlideClick() {
-  const slides = document.querySelectorAll('.slide');
-  if (window.innerWidth <= 1024) {
-      slides.forEach(slide => {
-        slide.addEventListener('click', () => {
-          slide.classList.toggle('active');
-      });
-    });
-  }
+const slides = document.querySelectorAll('.slide');
+
+// Отдельные обработчики
+function mouseEnterHandler() {
+  this.classList.add('active');
 }
 
+function mouseLeaveHandler() {
+  this.classList.remove('active');
+}
 
+function clickHandler() {
+  slides.forEach(slide => slide.classList.remove('active'));
+  this.classList.add('active');
+}
 
+function enableSlideClick() {
+  slides.forEach(slide => {
+    // Сначала снимаем старые обработчики, чтобы не дублировались
+    slide.removeEventListener('mouseenter', mouseEnterHandler);
+    slide.removeEventListener('mouseleave', mouseLeaveHandler);
+    slide.removeEventListener('click', clickHandler);
+
+    // Навешиваем обработчики
+    slide.addEventListener('mouseenter', mouseEnterHandler);
+    slide.addEventListener('mouseleave', mouseLeaveHandler);
+    slide.addEventListener('click', clickHandler);
+  });
+}
+
+// Инициализация
 enableSlideClick();
 
 
 window.addEventListener('resize', () => {
     updateSlideWidth();
     updateButtons();
-    enableSlideClick();
   });
 })
 
