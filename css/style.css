@@ -1210,12 +1210,21 @@ button {
 	border-radius: 10px;
 	box-sizing: border-box;
 	position: relative;
+
 }
 
 .slide img {
 	width: 100%;
-	height: 100%;
+	max-width: 217px;
+	/* ширина на всю доступную область */
+	aspect-ratio: 1 / 1;
+	/* квадрат */
+	object-fit: cover;
+	/* картинка обрезается по краям, но не искажается */
 	pointer-events: none;
+	/* чтобы клики шли на .slide, а не на картинку */
+	display: block;
+	/* убирает лишние отступы у img */
 }
 
 .slider__info {
@@ -1352,8 +1361,7 @@ button {
 	}
 
 	.slide {
-		flex: 0 0 22.22%;
-		max-height: 180px;
+		flex: 0 0 20%;
 	}
 
 
@@ -1366,7 +1374,7 @@ button {
 	}
 
 	.slide {
-		flex: 0 0 28.57%;
+		flex: 0 0 25%;
 	}
 
 }
@@ -1449,27 +1457,34 @@ button {
 
 	}
 
+	.slide {
+		flex: 0 0 33.33%;
+	}
+
+
 }
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
 	.slide {
-		flex: 0 0 33.3%;
-		height: auto;
+		flex: 0 0 40%;
 	}
-
-	.provider__wrapper a {
-		max-width: 85px;
-		height: auto;
-	}
+		.provider__wrapper a {
+			max-width: 85px;
+			height: auto;
+		}
 }
 
 
 @media (max-width: 550px) {
+	.slide {
+		flex: 0 0 50%;
+	}
 	.faq__menu-button .icon {
 		width: 13px;
 		height: 10px;
 		flex-shrink: 0;
 	}
+	
 
 	.bonuses__item svg {
 		height: 50px;
@@ -1560,15 +1575,9 @@ button {
 		margin-bottom: 20px;
 	}
 
-	.slide {
-		flex: 0 0 40%;
-		height: auto;
-		padding: 0 3px;
-	}
 
 	.slider__info {
-		margin: 0 3px;
-		padding: 5px;
+		padding: 4px;
 	}
 
 	.slider__line-left svg {
@@ -1582,16 +1591,19 @@ button {
 		gap: 3px;
 	}
 
-	.slider__btn {
-		width: 22px;
-		height: 22px;
-	}
-
 }
 
 @media (max-width: 450px) {
 	.bonuses__items {
 		grid-template-columns: repeat(1, 1fr);
+	}
+	.slider__info{
+		margin: 0 2px;
+		border-radius: 16px;
+	}
+	.slider{
+		width: 170px;
+		height: 170px;
 	}
 
 	.header__popup {
@@ -1602,10 +1614,15 @@ button {
 		height: 180px;
 	}
 
-	.slide {
-		flex: 0 0 50%;
-		padding: 0 3px;
-	}
+		.slide {
+			flex: 0 0 auto;
+	
+		}
+	
+		.slide img {
+			width: 170px;
+			height: 170px;
+		}
 
 	.slider__info-link {
 		font-size: 12px;
@@ -1619,10 +1636,9 @@ button {
 }
 
 @media (max-width: 400px) {
-	.slide {
-		flex: 0 0 66.66%;
-		height: 160px;
-	}
+	/* .slide {
+		flex: 0 0 62.5%;
+	} */
 
 	.provider__wrapper a {
 		max-width: 73px;
