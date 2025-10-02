@@ -610,6 +610,14 @@ button {
 	border: 1px solid #ffd700 !important;
 	outline: none !important;
 }
+.footer__form-socials{
+	display: flex;
+	gap: 20px;
+}
+.footer__form-socials a svg {
+	width: 30px;
+	height: 30px;
+}
 
 
 .wrapper__text-block {
@@ -1339,6 +1347,9 @@ button {
 		flex: 0 0 20%;
 	}
 
+	.footer__form-socials {
+		padding: 5px 0;
+	}
 
 }
 
@@ -1464,11 +1475,17 @@ button {
 	.bonuses__item svg {
 		height: 50px;
 	}
-
+	.footer__form-socials{
+		gap: 16px;
+	}
+	.footer__form-socials a svg {
+		width: 24px;
+		height: 24px;
+	}
 	.footer__line-form {
 		flex-direction: column;
 	}
-
+	
 	.footer__item-form svg {
 		width: 24px;
 		height: 24px;
@@ -1546,7 +1563,6 @@ button {
 		margin-bottom: 20px;
 	}
 
-
 	.slider__info {
 		padding: 4px;
 	}
@@ -1559,6 +1575,14 @@ button {
 	}
 	.slider__line-left {
 		gap: 3px;
+	}
+
+	.footer__line-form {
+		gap: 16px;
+	}
+	.footer__line-form a svg {
+		width: 24px;
+		height: 24px;
 	}
 
 }
