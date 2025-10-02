@@ -53,37 +53,26 @@ slider.addEventListener('scroll', updateButtons);
 
 
 
-const slides = document.querySelectorAll('.slide');
+ const slides = document.querySelectorAll('.slide');
 
-// Отдельные обработчики
-function mouseEnterHandler() {
-  this.classList.add('active');
+ function slideClickHandler() {
+  this.classList.toggle('active');
 }
-
-function mouseLeaveHandler() {
-  this.classList.remove('active');
-}
-
-function clickHandler() {
-  slides.forEach(slide => slide.classList.remove('active'));
-  this.classList.add('active');
-}
-
 function enableSlideClick() {
-  slides.forEach(slide => {
-    // Сначала снимаем старые обработчики, чтобы не дублировались
-    slide.removeEventListener('mouseenter', mouseEnterHandler);
-    slide.removeEventListener('mouseleave', mouseLeaveHandler);
-    slide.removeEventListener('click', clickHandler);
-
-    // Навешиваем обработчики
-    slide.addEventListener('mouseenter', mouseEnterHandler);
-    slide.addEventListener('mouseleave', mouseLeaveHandler);
-    slide.addEventListener('click', clickHandler);
-  });
+  if (window.innerWidth <= 1024) {
+    slides.forEach(slide => {
+      slide.removeEventListener('click', slideClickHandler);
+      slide.addEventListener('click', slideClickHandler);
+    });
+  } else {
+    // На больших экранах убираем активные классы и обработчики
+    slides.forEach(slide => {
+      slide.classList.remove('active');
+      slide.removeEventListener('click', slideClickHandler);
+    });
+  }
 }
 
-// Инициализация
 enableSlideClick();
 
 

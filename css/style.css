@@ -1238,10 +1238,20 @@ button {
 
 }
 
-.slide.active .slider__info {
-	opacity: 1;
-	visibility: visible;
+@media (min-width: 1025px) {
+	.slide:hover .slider__info {
+		opacity: 1;
+		visibility: visible;
+	}
 }
+
+@media (max-width: 1024px) {
+	.slide.active .slider__info {
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
 
 .slider__info-title {
 	font-size: clamp(18px, 1vw, 20px);
