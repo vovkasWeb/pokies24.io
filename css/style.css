@@ -481,7 +481,7 @@ button {
 /*providers*/
 .providers {
 	background: #113047;
-	padding: clamp(5px, 1vw, 15px) 0;
+	padding: clamp(10px, 1vw, 20px) 0;
 }
 
 .provider__wrapper {
@@ -490,6 +490,15 @@ button {
 	height: auto;
 	justify-content: space-around;
 	gap: 10px;
+}
+.provider__wrapper a{
+	width: 100%;
+	max-width: 170px;
+	cursor: pointer;
+}
+.provider__wrapper a  img{
+	width: 100%;
+	height: auto;
 }
 
 .footer {
@@ -1070,18 +1079,20 @@ button {
 }
 
 .faq__content {
-	padding: 0 20px;
+	padding: 0px 20px;
 	font-size: clamp(14px, 1vw, 16px);
 	font-weight: 400;
 	line-height: 18px;
-	transition: 0.4s;
+	transition: height 300ms ease, padding 300ms ease;
 	height: 0;
+	margin-top: 10px;
 	overflow: hidden;
 }
+.faq__accordion.open-bg {
+	background: linear-gradient(90deg, #00223B 1.44%, #0D6EB9 100%);
 
-.faq__content p+p {
-	margin-top: 15px;
 }
+
 
 #mlb2-30764281.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow {
 	margin: 0 !important;
@@ -1368,9 +1379,9 @@ button {
 		padding: 10px;
 	}
 
-	.provider__wrapper svg {
-		max-width: 120px;
-		height: 60px;
+	.provider__wrapper a {
+		max-width: 100px;
+		height: auto;
 	}
 
 	.faq__accordion {
@@ -1403,7 +1414,7 @@ button {
 		gap: 10px;
 	}
 
-	.provider__wrapper svg {
+	.provider__wrapper a {
 		max-width: 90px;
 	}
 
@@ -1418,7 +1429,12 @@ button {
 		flex: 0 0 33.3%;
 		height: auto;
 	}
+	.provider__wrapper a {
+		max-width: 85px;
+		height: auto;
+	}
 }
+
 
 @media (max-width: 550px) {
 	.faq__menu-button .icon {
@@ -1542,6 +1558,10 @@ button {
 	.slider__info-link{
 		font-size: 12px;
 	}
+	.provider__wrapper a {
+		max-width: 78px;
+		height: auto;
+	}
 
 }
 @media (max-width: 400px) {
@@ -1549,4 +1569,8 @@ button {
 		flex: 0 0 66.66%;
 		height: 160px;
 	}
+		.provider__wrapper a {
+			max-width: 73px;
+			height: auto;
+		}
 }
