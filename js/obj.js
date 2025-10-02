@@ -204,37 +204,37 @@ export const pagas={
 			'new-pokies':{
 				name: 'New Pokies',
 				url: './new-pokies',
-				pages:[]
+				pages:{}
 			},
 			'popular-pokies':{
 				name: 'Popular Pokies',
 				url: './popular-pokies',
-				pages:[]
+				pages:{}
 			},
 			'pokies-by-provider':{
 				name: 'Pokies by Provider',
 				url: './pokies-by-provider',
-				pages:[]
+				pages:{}
 			},
 			'table-games':{
 				name: 'Table Games',
 				url: './table-games',
-				pages:[]
+				pages:{}
 			},
 			'live-dealer':{
 				name: 'Live Dealer',
 				url: './live-dealer',
-				pages:[]
+				pages:{}
 			},
 			'virtual':{
 				name: 'Virtual',
 				url: './virtual',
-				pages:[]
+				pages:{}
 			},
 			'crash-pokies':{
 				name: 'Crash Pokies',
 				url: './crash-pokies',
-				pages:[]
+				pages:{}
 			},
 		}
 	},
@@ -264,22 +264,22 @@ export const pagas={
 					"payid": {
 						name: 'PayId',
 						url: './payid',
-						pages:[]
+						pages:{}
 					},
 					"credit-cards": {
 						name: 'Credit cards',
 						url: './credit-cards',
-						pages:[]
+						pages:{}
 					},
 					"crypto": {
 						name: 'Crypto',
 						url: './crypto',
-						pages:[]
+						pages:{}
 					},
 					"neosurf": {
 						name: 'Neosurf',
 						url: './neosurf',
-						pages:[]
+						pages:{}
 					},
 				}
 			},

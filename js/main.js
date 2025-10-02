@@ -10,7 +10,7 @@ const element = element => {
             <img src="${element.img.url}" alt="${element.img.alt}" />
         </div>
         <div class="category__info-item">
-            <h4 class="category__title-item">${element.title}</h4>
+            <h3 class="category__title-item">${element.title}</h3>
             <span class="category__text-item">
                ${element.text}
             </span>
