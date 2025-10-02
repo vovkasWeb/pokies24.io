@@ -347,7 +347,7 @@ button {
 .category__title {
 	text-align: center;
 	font-weight: 700;
-	font-size: clamp(20px, 1vw, 36px);
+	font-size: clamp(20px, 2.5vw, 36px);
 	line-height: 140%;
 	margin-bottom: 15px;
 	color: #fff;
@@ -627,7 +627,7 @@ button {
 
 .title__text-block,
 .main-title__text-block {
-	font-size: clamp(22px, 1vw, 36px);
+	font-size: clamp(22px, 2.5vw, 36px);
 	font-weight: 700;
 	line-height: 140%;
 	color: #ffffff;
@@ -724,7 +724,7 @@ button {
 } */
 .title__why-demo,
 .title__real-money {
-	font-size: clamp(22px, 1vw, 34px);
+	font-size: clamp(22px, 2.5vw, 34px);
 	font-weight: 700;
 	line-height: 140%;
 	margin-bottom: clamp(5px, 1vw, 10px);
@@ -802,8 +802,10 @@ button {
 .head-item__real-money svg {
 	width: 40px;
 	height: 40px;
+	flex: 0 0 auto;
 	display: inline-block;
 }
+
 
 .title-item__real-money {
 	font-size: clamp(20px, 1vw, 26px);
@@ -824,7 +826,7 @@ button {
 	padding: clamp(10px, 1vw, 30px) 0;
 } */
 .bonuses__title {
-	font-size: clamp(22px, 1vw, 34px);
+	font-size: clamp(22px, 2.5vw, 34px);
 	line-height: 140%;
 	font-weight: 700;
 	color: #fff;
@@ -896,7 +898,7 @@ button {
 	padding: clamp(10px, 1vw, 30px) 0px;
 } */
 .title__provider-focus {
-	font-size: clamp(22px, 1vw, 34px);
+	font-size: clamp(22px, 2.5vw, 34px);
 	line-height: 140%;
 	font-weight: 700;
 	color: #fff;
@@ -932,7 +934,7 @@ button {
 	gap: 20px;
 }
 .element__provider-focus .img__provider-focus{
-	width:100%;
+	width: auto;
 	height: auto;
 }
 .element__provider-focus .img__provider-focus source{
@@ -981,7 +983,7 @@ button {
 	padding: clamp(10px, 1vw, 30px) 0;
 } */
 .practical__title {
-	font-size: clamp(22px, 1vw, 34px);
+	font-size: clamp(22px, 2.5vw, 34px);
 	font-weight: 700;
 	line-height: 140%;
 	color: #fff;
@@ -1029,7 +1031,7 @@ button {
 	padding: clamp(10px, 1vw, 30px) 0;
 } */
 .faq__title {
-	font-size: clamp(26px, 1vw, 36px);
+	font-size: clamp(26px, 2.5vw, 36px);
 	font-weight: 700;
 	line-height: 140%;
 	text-align: center;
