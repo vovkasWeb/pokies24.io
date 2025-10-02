@@ -1026,10 +1026,7 @@ button {
 	color: #fff;
 }
 
-/*faq*/
-/* .faq{
-	padding: clamp(10px, 1vw, 30px) 0;
-} */
+
 .faq__title {
 	font-size: clamp(26px, 2.5vw, 36px);
 	font-weight: 700;
@@ -1229,14 +1226,24 @@ button {
 	box-sizing: border-box;
 	border: 1px solid #657E90;
 	border-radius: 10px;
-	background: #103956;
+	background: #103956DB;
 
 }
 
-.slide:hover .slider__info {
-	opacity: 1;
-	visibility: visible;
+@media (min-width: 1025px) {
+	.slide:hover .slider__info {
+		opacity: 1;
+		visibility: visible;
+	}
 }
+@media (max-width: 1024px) {
+	.slide.active .slider__info {
+		opacity: 1;
+		visibility: visible;
+		cursor: pointer;
+	}
+}
+
 
 .slider__info-title {
 	font-size: clamp(18px, 1vw, 20px);
@@ -1285,10 +1292,7 @@ button {
 	background: #FFC700;
 	color: #000000;
 }
-.slider__info.two{
-	background: #103956ce;
-	backdrop-filter: blur(8px)
-}
+
 .slider__info-link.two{
 	width: 100%;
 	background: #FFC700;

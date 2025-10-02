@@ -40,6 +40,8 @@ function updateButtons() {
 }
 
 
+
+
 // Прокрутка кнопками
 btnRight.addEventListener('click', scrollRight);
 btnLeft.addEventListener('click',scrollLeft);
@@ -49,8 +51,28 @@ slider.addEventListener('scroll', updateButtons);
   updateSlideWidth();
   updateButtons();
 
+
+
+function enableSlideClick() {
+  const slides = document.querySelectorAll('.slide');
+  if (window.innerWidth <= 1024) {
+      slides.forEach(slide => {
+        slide.addEventListener('click', () => {
+          slide.classList.toggle('active');
+      });
+    });
+  }
+}
+
+
+
+enableSlideClick();
+
+
 window.addEventListener('resize', () => {
     updateSlideWidth();
     updateButtons();
+    enableSlideClick();
   });
 })
+
