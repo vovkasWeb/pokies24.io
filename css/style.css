@@ -169,8 +169,8 @@ button {
 }
 
 .header__list li:hover {
-	color: #8a7600;
-	stroke: #8a7600;
+	color: #FFD700;
+	stroke: #FFD700;
 }
 
 .header__sublist.right .header__underlist.right {
