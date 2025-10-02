@@ -931,6 +931,13 @@ button {
 	display: flex;
 	gap: 20px;
 }
+.element__provider-focus .img__provider-focus{
+	width:100%;
+	height: auto;
+}
+.element__provider-focus .img__provider-focus source{
+	text-align: center;
+}
 
 .title-element__provider-focus {
 	font-size: clamp(18px, 1vw, 26px);
@@ -1470,8 +1477,11 @@ button {
 		align-items: center;
 		gap: 10px;
 	}
+	.element__provider-focus .img__provider-focus {
+		text-align: center;
+	}
 
-	.element__provider-focus img {
+	.element__provider-focus .element__provider-focus {
 		width: 170px;
 		height: 80px;
 	}
