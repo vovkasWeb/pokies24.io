@@ -574,7 +574,12 @@ button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 150px;
+	gap: clamp(20px, 8vw, 150px);
+}
+.footer__bottom a svg,
+.footer__bottom a img{
+	width: 100%;
+	height: auto;
 }
 
 .ml-form-embedWrapper .ml-form-embedBody {
@@ -1423,6 +1428,7 @@ button {
 		gap: 10px;
 
 	}
+
 }
 @media (max-width: 650px) {
 	.slide {
