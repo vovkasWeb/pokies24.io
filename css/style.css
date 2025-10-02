@@ -1238,19 +1238,19 @@ button {
 
 }
 
-@media (min-width: 1025px) {
+@media (hover: hover) and (pointer: fine) {
 	.slide:hover .slider__info {
 		opacity: 1;
 		visibility: visible;
 	}
 }
 
-@media (max-width: 1024px) {
-	.slide.active .slider__info {
-		opacity: 1;
-		visibility: visible;
-	}
+.card.active .card-back {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
 }
+
 
 
 .slider__info-title {

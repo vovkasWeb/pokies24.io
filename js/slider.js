@@ -55,25 +55,32 @@ slider.addEventListener('scroll', updateButtons);
 
  const slides = document.querySelectorAll('.slide');
 
- function slideClickHandler() {
-  this.classList.toggle('active');
-}
-function enableSlideClick() {
-  if (window.innerWidth <= 1024) {
-    slides.forEach(slide => {
-      slide.removeEventListener('click', slideClickHandler);
-      slide.addEventListener('click', slideClickHandler);
+const cards = document.querySelectorAll('.slide');
+
+function enableMobileClick() {
+  if (window.innerWidth <= 1024) { // планшет и мобила
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        // выключаем актив для всех
+        cards.forEach(c => c.classList.remove('active'));
+        // включаем только для текущей
+        card.classList.add('active');
+      });
     });
   } else {
-    // На больших экранах убираем активные классы и обработчики
-    slides.forEach(slide => {
-      slide.classList.remove('active');
-      slide.removeEventListener('click', slideClickHandler);
+    // на ПК убираем клик
+    cards.forEach(card => {
+      card.classList.remove('active');
+      card.onclick = null;
     });
   }
 }
 
-enableSlideClick();
+// запуск при загрузке
+enableMobileClick();
+
+// запуск при изменении размера
+window.addEventListener('resize', enableMobileClick);
 
 
 window.addEventListener('resize', () => {
