@@ -1245,7 +1245,7 @@ button {
 	}
 }
 
-.card.active .card-back {
+.slide.active .slider__info {
 	opacity: 1;
 	visibility: visible;
 	pointer-events: all;
