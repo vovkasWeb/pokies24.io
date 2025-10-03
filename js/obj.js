@@ -239,7 +239,7 @@ export const pagas={
 		}
 	},
 	'online-casino':{
-		name: 'ONLINE CASINO',
+		name: 'ONLINE CASINOS',
 		url: './online-casino',
 		pages:{
 			'recommended':{
@@ -297,7 +297,7 @@ export const bestPartner={
 	'best-online-casinos-au':{
 		name: 'Best Online Casinos Australia',
 		parners:{
-			
+
 		}
 	}
 }
