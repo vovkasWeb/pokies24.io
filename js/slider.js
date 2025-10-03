@@ -76,14 +76,16 @@ document.querySelectorAll('.sliders__content').forEach(sliderWrapper => {
 
   sliderWrapper.addEventListener('touchmove', (e) => {
     if (!isTouching) return;
+
     const diffX = e.touches[0].clientX - startX;
     const diffY = e.touches[0].clientY - startY;
 
-    // если вертикальный скролл больше горизонтального — отменяем свайп
-    if (Math.abs(diffY) > Math.abs(diffX)) {
-      isTouching = false;
+    if (Math.abs(diffX) > Math.abs(diffY)) {
+      e.preventDefault(); // запрещаем вертикальный скролл страницы
+    } else {
+      isTouching = false; // вертикальный скролл, отменяем свайп
     }
-  });
+  }, { passive: false });
 
   sliderWrapper.addEventListener('touchend', (e) => {
     if (!isTouching) return;
@@ -92,12 +94,13 @@ document.querySelectorAll('.sliders__content').forEach(sliderWrapper => {
     const endX = e.changedTouches[0].clientX;
     const diff = endX - startX;
 
-    if (Math.abs(diff) > 50) { // порог свайпа
+    if (Math.abs(diff) > 50) {
       if (diff < 0) scrollRight();
       else scrollLeft();
     }
   });
 
+  // === Обновление ширины слайдов при ресайзе ===
   window.addEventListener('resize', () => {
     slideWidth = slides[0].offsetWidth;
     slider.style.transition = 'none';
