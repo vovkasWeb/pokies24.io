@@ -64,22 +64,37 @@ document.querySelectorAll('.sliders__content').forEach(sliderWrapper => {
 
   // === Свайп для мобильных ===
   let startX = 0;
-  let endX = 0;
+  let startY = 0;
+  let isTouching = false;
 
   sliderWrapper.addEventListener('touchstart', (e) => {
+    if (isAnimating) return;
+    isTouching = true;
     startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+  });
+
+  sliderWrapper.addEventListener('touchmove', (e) => {
+    if (!isTouching) return;
+    const diffX = e.touches[0].clientX - startX;
+    const diffY = e.touches[0].clientY - startY;
+
+    // если вертикальный скролл больше горизонтального — отменяем свайп
+    if (Math.abs(diffY) > Math.abs(diffX)) {
+      isTouching = false;
+    }
   });
 
   sliderWrapper.addEventListener('touchend', (e) => {
-    endX = e.changedTouches[0].clientX;
-    let diff = endX - startX;
+    if (!isTouching) return;
+    isTouching = false;
+
+    const endX = e.changedTouches[0].clientX;
+    const diff = endX - startX;
 
     if (Math.abs(diff) > 50) { // порог свайпа
-      if (diff < 0) {
-        scrollRight(); // свайп влево → следующий слайд
-      } else {
-        scrollLeft(); // свайп вправо → предыдущий слайд
-      }
+      if (diff < 0) scrollRight();
+      else scrollLeft();
     }
   });
 
