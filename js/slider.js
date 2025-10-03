@@ -52,11 +52,7 @@ slider.addEventListener('scroll', updateButtons);
   updateButtons();
 
 
-
- const slides = document.querySelectorAll('.slide');
-
 const cards = document.querySelectorAll('.slide');
-
 function enableMobileClick() {
   if (window.innerWidth <= 1024) { // планшет и мобила
     cards.forEach(card => {
