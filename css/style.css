@@ -87,7 +87,7 @@ button {
 	left: auto;
 	right: -100%;
 	width: 100%;
-	height: calc(100vh - 55px);
+	height: calc(150vh);
 	z-index: 10;
 	transition: right 0.5s ease;
 	overflow-y: auto;
