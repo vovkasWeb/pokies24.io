@@ -5,8 +5,6 @@ document.querySelectorAll('.sliders__content').forEach(sliderWrapper => {
 
   let slides = Array.from(slider.children);
   let slideWidth = slides[0].offsetWidth;
-
-  // клонируем слайды для бесконечности
   slides.forEach(slide => slider.appendChild(slide.cloneNode(true)));
 
   let position = 0;
@@ -14,19 +12,22 @@ document.querySelectorAll('.sliders__content').forEach(sliderWrapper => {
   const halfSlides = totalSlides / 2;
   let isAnimating = false;
 
+  function goToPosition(pos, instant = false) {
+    slider.style.transition = instant ? 'none' : 'transform 0.3s ease';
+    slider.style.transform = `translateX(${-slideWidth * pos}px)`;
+  }
+
   function scrollRight() {
     if (isAnimating) return;
     isAnimating = true;
 
     position++;
-    slider.style.transition = 'transform 0.4s ease';
-    slider.style.transform = `translateX(${-slideWidth * position}px)`;
+    goToPosition(position);
 
     slider.addEventListener('transitionend', () => {
       if (position >= halfSlides) {
-        slider.style.transition = 'none';
         position = 0;
-        slider.style.transform = `translateX(0px)`;
+        goToPosition(position, true);
       }
       isAnimating = false;
     }, { once: true });
@@ -37,22 +38,12 @@ document.querySelectorAll('.sliders__content').forEach(sliderWrapper => {
     isAnimating = true;
 
     if (position === 0) {
-      slider.style.transition = 'none';
       position = halfSlides;
-      slider.style.transform = `translateX(${-slideWidth * position}px)`;
-
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-          position--;
-          slider.style.transition = 'transform 0.4s ease';
-          slider.style.transform = `translateX(${-slideWidth * position}px)`;
-        });
-      });
-    } else {
-      position--;
-      slider.style.transition = 'transform 0.4s ease';
-      slider.style.transform = `translateX(${-slideWidth * position}px)`;
+      goToPosition(position, true);
     }
+
+    position--;
+    goToPosition(position);
 
     slider.addEventListener('transitionend', () => {
       isAnimating = false;
@@ -62,46 +53,45 @@ document.querySelectorAll('.sliders__content').forEach(sliderWrapper => {
   btnRight.addEventListener('click', scrollRight);
   btnLeft.addEventListener('click', scrollLeft);
 
-  // === Свайп для мобильных ===
+  // === Плавный свайп пальцем ===
   let startX = 0;
-  let startY = 0;
-  let isTouching = false;
+  let currentTranslate = 0;
+  let prevTranslate = 0;
+  let isDragging = false;
 
-  sliderWrapper.addEventListener('touchstart', (e) => {
+  sliderWrapper.addEventListener('touchstart', e => {
     if (isAnimating) return;
-    isTouching = true;
     startX = e.touches[0].clientX;
-    startY = e.touches[0].clientY;
+    isDragging = true;
+    slider.style.transition = 'none';
   });
 
-  sliderWrapper.addEventListener('touchmove', (e) => {
-    if (!isTouching) return;
-    const diffX = e.touches[0].clientX - startX;
-    const diffY = e.touches[0].clientY - startY;
-
-    // если вертикальный скролл больше горизонтального — отменяем свайп
-    if (Math.abs(diffY) > Math.abs(diffX)) {
-      isTouching = false;
-    }
+  sliderWrapper.addEventListener('touchmove', e => {
+    if (!isDragging) return;
+    const currentX = e.touches[0].clientX;
+    const diff = currentX - startX;
+    // двигаем слайдер за пальцем
+    slider.style.transform = `translateX(${ -position * slideWidth + diff }px)`;
   });
 
-  sliderWrapper.addEventListener('touchend', (e) => {
-    if (!isTouching) return;
-    isTouching = false;
+  sliderWrapper.addEventListener('touchend', e => {
+    if (!isDragging) return;
+    isDragging = false;
 
     const endX = e.changedTouches[0].clientX;
     const diff = endX - startX;
 
-    if (Math.abs(diff) > 50) { // порог свайпа
+    if (Math.abs(diff) > slideWidth / 3) {
       if (diff < 0) scrollRight();
       else scrollLeft();
+    } else {
+      goToPosition(position); // "прилипание" к текущему слайду
     }
   });
 
   window.addEventListener('resize', () => {
     slideWidth = slides[0].offsetWidth;
-    slider.style.transition = 'none';
-    slider.style.transform = `translateX(${-slideWidth * position}px)`;
+    goToPosition(position, true);
   });
 });
 

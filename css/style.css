@@ -1229,6 +1229,7 @@ button {
 	border-radius: 16px;
 	background: #103956DB;
 	aspect-ratio: 1 / 1;
+	backdrop-filter: blur(9.699999809265137px)
 
 }
 
