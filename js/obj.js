@@ -226,11 +226,6 @@ export const pagas={
 				url: './live-dealer',
 				pages:{}
 			},
-			'virtual':{
-				name: 'Virtual',
-				url: './virtual',
-				pages:{}
-			},
 			'crash-pokies':{
 				name: 'Crash Pokies',
 				url: './crash-pokies',
