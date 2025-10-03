@@ -292,3 +292,12 @@ export const pagas={
 	}
 	
 }
+
+export const bestPartner={
+	'best-online-casinos-au':{
+		name: 'Best Online Casinos Australia',
+		parners:{
+			
+		}
+	}
+}
