@@ -1,57 +1,73 @@
-document.querySelectorAll('.sliders__content').forEach(sliderWripper => {
-const slider = sliderWripper.querySelector('.slider-track');
-const btnLeft = sliderWripper.querySelector('.slider-btn-left');
-const btnRight = sliderWripper.querySelector('.slider-btn-right');
-const sliderWrapper = sliderWripper.querySelector('.slider-wrapper');
+document.querySelectorAll('.sliders__content').forEach(sliderWrapper => {
+  const slider = sliderWrapper.querySelector('.slider-track');
+  const btnLeft = sliderWrapper.querySelector('.slider-btn-left');
+  const btnRight = sliderWrapper.querySelector('.slider-btn-right');
 
-let slideWidth;
+  let slides = Array.from(slider.children);
+  let slideWidth = slides[0].offsetWidth; // учитываем margin-right
 
-function updateSlideWidth() {
-    slideWidth = slider.querySelector('.slide').offsetWidth;
-    sliderWrapper.style.setProperty('--after-width', `${slideWidth / 2}px`);
-}
-function scrollRight() {
-    slider.scrollBy({ left: slideWidth, behavior: 'smooth' });
-}
-function scrollLeft() {
-    if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 1) {
-        slider.scrollBy({ left: -slideWidth / 2, behavior: 'smooth' });
-    }
-    else{
-        slider.scrollBy({ left: -slideWidth, behavior: 'smooth' });
-    }
-}
+  // клонируем слайды для бесконечности
+  slides.forEach(slide => slider.appendChild(slide.cloneNode(true)));
 
+  let position = 0;
+  const totalSlides = slider.children.length;
+  const halfSlides = totalSlides / 2;
+  let isAnimating = false;
 
-function updateButtons() {
-  // Слайдер в начале
-  if (slider.scrollLeft <= 0) {
-    btnLeft.classList.add('disabled');
-  } else {
-    btnLeft.classList.remove('disabled');
+  function scrollRight() {
+    if (isAnimating) return;
+    isAnimating = true;
+
+    position++;
+    slider.style.transition = 'transform 0.4s ease';
+    slider.style.transform = `translateX(${-slideWidth * position}px)`;
+
+    slider.addEventListener('transitionend', () => {
+      if (position >= halfSlides) {
+        slider.style.transition = 'none';
+        position = 0;
+        slider.style.transform = `translateX(0px)`;
+      }
+      isAnimating = false;
+    }, { once: true });
   }
 
-  // Слайдер в конце
-  if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 1) {
-    btnRight.classList.add('disabled');
-  } else {
-    btnRight.classList.remove('disabled');
+  function scrollLeft() {
+    if (isAnimating) return;
+    isAnimating = true;
+
+    if (position === 0) {
+      slider.style.transition = 'none';
+      position = halfSlides;
+      slider.style.transform = `translateX(${-slideWidth * position}px)`;
+
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          position--;
+          slider.style.transition = 'transform 0.4s ease';
+          slider.style.transform = `translateX(${-slideWidth * position}px)`;
+        });
+      });
+    } else {
+      position--;
+      slider.style.transition = 'transform 0.4s ease';
+      slider.style.transform = `translateX(${-slideWidth * position}px)`;
+    }
+
+    slider.addEventListener('transitionend', () => {
+      isAnimating = false;
+    }, { once: true });
   }
-}
 
+  btnRight.addEventListener('click', scrollRight);
+  btnLeft.addEventListener('click', scrollLeft);
 
-
-
-// Прокрутка кнопками
-btnRight.addEventListener('click', scrollRight);
-btnLeft.addEventListener('click',scrollLeft);
-slider.addEventListener('scroll', updateButtons);
-
-// Инициализация состояния
-  updateSlideWidth();
-  updateButtons();
-
-
+  window.addEventListener('resize', () => {
+    slideWidth = slides[0].offsetWidth;
+    slider.style.transition = 'none';
+    slider.style.transform = `translateX(${-slideWidth * position}px)`;
+  });
+});
 const cards = document.querySelectorAll('.slide');
 function enableMobileClick() {
   if (window.innerWidth <= 1024) { // планшет и мобила
@@ -77,11 +93,3 @@ enableMobileClick();
 
 // запуск при изменении размера
 window.addEventListener('resize', enableMobileClick);
-
-
-window.addEventListener('resize', () => {
-    updateSlideWidth();
-    updateButtons();
-  });
-})
-

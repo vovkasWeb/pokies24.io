@@ -1156,13 +1156,13 @@ button {
 
 .slider-track {
 	display: flex;
-	overflow: hidden;
-	position: relative;
 }
 
 .slider-wrapper {
 	position: relative;
 	padding-right: 1px;
+	overflow: hidden;
+	flex: 1;
 }
 
 .slider-wrapper::after {
