@@ -4,7 +4,7 @@ document.querySelectorAll('.sliders__content').forEach(sliderWrapper => {
   const btnRight = sliderWrapper.querySelector('.slider-btn-right');
 
   let slides = Array.from(slider.children);
-  let slideWidth = slides[0].offsetWidth; // учитываем margin-right
+  let slideWidth = slides[0].offsetWidth;
 
   // клонируем слайды для бесконечности
   slides.forEach(slide => slider.appendChild(slide.cloneNode(true)));
@@ -62,12 +62,34 @@ document.querySelectorAll('.sliders__content').forEach(sliderWrapper => {
   btnRight.addEventListener('click', scrollRight);
   btnLeft.addEventListener('click', scrollLeft);
 
+  // === Свайп для мобильных ===
+  let startX = 0;
+  let endX = 0;
+
+  sliderWrapper.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  sliderWrapper.addEventListener('touchend', (e) => {
+    endX = e.changedTouches[0].clientX;
+    let diff = endX - startX;
+
+    if (Math.abs(diff) > 50) { // порог свайпа
+      if (diff < 0) {
+        scrollRight(); // свайп влево → следующий слайд
+      } else {
+        scrollLeft(); // свайп вправо → предыдущий слайд
+      }
+    }
+  });
+
   window.addEventListener('resize', () => {
     slideWidth = slides[0].offsetWidth;
     slider.style.transition = 'none';
     slider.style.transform = `translateX(${-slideWidth * position}px)`;
   });
 });
+
 const cards = document.querySelectorAll('.slide');
 function enableMobileClick() {
   if (window.innerWidth <= 1024) { // планшет и мобила
