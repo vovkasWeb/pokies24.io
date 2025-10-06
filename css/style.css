@@ -75,6 +75,9 @@ button {
 	position: relative;
 }
 
+.header__back-menu-mobile.noneVisible{
+	visibility: hidden;
+}
 .header__item.active {
 	color: #ffd700;
 }

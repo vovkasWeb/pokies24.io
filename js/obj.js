@@ -280,6 +280,11 @@ export const pagas={
 			},
 		}
 	},
+	'about':{
+		name: 'ABOUT US',
+		url: './about-us',
+		pages:{}
+	},
 	'contact':{
 		name: 'CONTACT',
 		url: './contact',
