@@ -1275,13 +1275,13 @@ button {
 	padding-top: clamp(0px, 1vw, 5px);
 	display: flex;
 	gap: clamp(2px, 0.3vw, 5px);
-	justify-items: space-between;
+	justify-content: space-between;
 }
 
 .slider__info-link {
 	border-radius: clamp(7px, 0.3vw, 9px);
-	padding: clamp(4px, 0.3vw, 8px) clamp(7px, 0.3vw, 9px);
-	font-size: clamp(11px, 1vw, 14px);
+	padding: clamp(5px, 0.5vw, 6px) 5px;
+	font-size: clamp(11px, 1vw, 13px);
 	font-weight: 500;
 	line-height: 140%;
 }
@@ -1289,19 +1289,26 @@ button {
 .slider__info-link-demo {
 	background: #00192B;
 	color: #FFFFFF;
+	display: block;
+	flex: 0 1 60%;
+	text-align: center;
 }
 
 .slider__info-link-play {
 	background: #FFC700;
 	color: #000000;
+	flex: 0 1 39%;
+	display: block;
+	text-align: center;
 }
 
 .slider__info-link.two {
 	width: 100%;
 	background: #FFC700;
-	border-radius: 10px;
 	color: #000000;
 	text-align: center;
+	padding-left: 0px;
+	padding-right: 0px;;
 }
 
 
@@ -1615,7 +1622,8 @@ button {
 	}
 
 	.slider__info-link {
-		font-size: 13px;
+		padding-left: 2px;
+		padding-right: 2px;
 	}
 	.slide .slider__contener{
 		width: 170px;
