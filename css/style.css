@@ -87,20 +87,18 @@ button {
 	padding: 0 15px;
 	padding-bottom: 40px;
 	background: #001C31;
-	top: 55px;
 	left: auto;
-	right: -100%;
+	top: -100%;
 	width: 100%;
 	height: auto;
-	z-index: 10;
-	transition: right 0.5s ease;
+	z-index: 2;
+	transition: top 0.6s ease;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
 }
 
 .header__menu-mobile.active {
-	right: 0;
-	/* выезжает плавно */
+		top: 55px;
 }
 
 .header__menu-mobile.active {
