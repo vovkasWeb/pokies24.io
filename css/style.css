@@ -1283,8 +1283,8 @@ button {
 
 .slider__info-link {
 	border-radius: clamp(7px, 0.3vw, 9px);
-	padding: clamp(5px, 0.5vw, 6px) 5px;
-	font-size: clamp(11px, 1vw, 13px);
+	padding: clamp(5px, 0.5vw, 6px) 3px;
+	font-size: clamp(11px, 1vw, 12px);
 	font-weight: 500;
 	line-height: 140%;
 }
