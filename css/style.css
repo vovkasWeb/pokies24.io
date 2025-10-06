@@ -85,12 +85,13 @@ button {
 .header__menu-mobile {
 	position: fixed;
 	padding: 0 15px;
+	padding-bottom: 40px;
 	background: #001C31;
 	top: 55px;
 	left: auto;
 	right: -100%;
 	width: 100%;
-	height: calc(150vh);
+	height: auto;
 	z-index: 10;
 	transition: right 0.5s ease;
 	overflow-y: auto;
