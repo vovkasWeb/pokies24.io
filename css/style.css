@@ -647,6 +647,13 @@ button {
 	color: #ffffff;
 	margin-bottom: clamp(5px, 1vw, 10px);
 }
+.text__text-block .text__line-block {
+	color: #C0CAD5;
+	text-decoration: underline;
+}
+.text__text-block.lastElement {
+	margin-bottom: 0px;
+}
 
 .main-title__text-block {
 	text-align: center;
@@ -727,10 +734,16 @@ button {
 .title__real-money {
 	font-size: clamp(22px, 2.5vw, 34px);
 	font-weight: 700;
-	line-height: 140%;
-	margin-bottom: clamp(5px, 1vw, 10px);
+	line-height: 110%;
+	margin-bottom: clamp(5px, 2vw, 10px);
 	color: #fff;
 	text-align: center;
+}
+
+.title__real-money{
+	max-width: 890px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .text__why-demo,
@@ -804,7 +817,6 @@ button {
 	display: inline-block;
 }
 
-
 .title-item__real-money {
 	font-size: clamp(20px, 1vw, 26px);
 	font-weight: 700;
@@ -812,7 +824,16 @@ button {
 	color: #fff;
 }
 
-.text-item__real-money {
+.item__line-real-money{
+	padding: 20px;
+	border-radius: 17px;
+	border: 1px solid #8899a5;
+	background: #041D30;
+	margin-top: clamp(10px, 1vw, 20px);
+}
+
+.text-item__real-money,
+.text__line-real-money{
 	font-size: clamp(14px, 1vw, 16px);
 	font-weight: 400;
 	line-height: 150%;
