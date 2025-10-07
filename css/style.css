@@ -847,7 +847,10 @@ button {
 	color: #fff;
 	margin-bottom: clamp(5px, 1vw, 10px);
 	text-align: center;
+	margin: 0 auto;
+	max-width: 900px;
 }
+
 
 .bonuses__text {
 	font-size: clamp(14px, 1vw, 16px);
@@ -916,7 +919,7 @@ button {
 	color: #fff;
 	margin-bottom: 10px;
 	text-align: center;
-	width: 700px;
+	width: 900px;
 	max-width: 100%;
 	margin: 0 auto;
 }
