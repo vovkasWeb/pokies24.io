@@ -295,9 +295,87 @@ export const pagas={
 
 export const bestPartner={
 	'best-online-casinos-au':{
-		name: 'Best Online Casinos Australia',
 		parners:{
-
+			'caswino':{
+				name: 'Caswino',
+				rating: 5,
+				img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
+				bonus: "Welcome bonus: 600% up to 4800$ + 255 free Spins",
+				review: '',
+				play: '',
+			},
+			'neospin':{
+				name: 'Neospin',
+				rating: 5,
+				img: { url: './img/partners/neospin.webp', alt: 'Neospin Logo' },
+				bonus: "Welcome bonus: 100% up to AU$6,000 + 100 Free Spins",
+				review: '',
+				play: '',
+			},
+			'crown-slots':{
+				name: 'Crown Slots',
+				rating: 4.9,
+				img: { url: './img/partners/neospin.webp', alt: 'Crown SlotsLogo' },
+				bonus: "Welcome bonus: 400% up to AU$4,000 + 250 Free Spins",
+				review: '',
+				play: '',
+			},
+			'bdm-bet':{
+				name: 'BDM Bet',
+				rating: 4.8,
+				img: { url: './img/partners/neospin.webp', alt: 'BDM Bet Logo' },
+				bonus: "Welcome bonus: up to AU$4,000 + 150 Free Spins",
+				review: '',
+				play: '',
+			},
+			'richard-casino':{
+				name: 'Richard Casino',
+				rating: 4.7,
+				img: { url: './img/partners/neospin.webp', alt: 'Richard Casino Logo' },
+				bonus: "Welcome bonus: up to AU$5,000 + 500 Free Spins",
+				review: '',
+				play: '',
+			},
+			'axe-casino':{
+				name: 'Axe Casino',
+				rating: 4.5,
+				img: { url: './img/partners/neospin.webp', alt: 'Axe Casino Logo' },
+				bonus: "Welcome bonus: up to AU$5,625 + 200 Free Spins",
+				review: '',
+				play: '',
+			},
+			'oscarspin':{
+				name: 'Oscarspin',
+				rating: 4.4,
+				img: { url: './img/partners/neospin.webp', alt: 'Oscarspin Logo' },
+				bonus: "Welcome bonus: up to AU$4,000 + 225 Free Spins",
+				review: '',
+				play: '',
+			},
+			'sky-crown':{
+				name: 'SkyCrown',
+				rating: 4.3,
+				img: { url: './img/partners/neospin.webp', alt: 'SkyCrown Logo' },
+				bonus: "Welcome bonus: up to AU$8,000 + 400 Free Spins",
+				review: '',
+				play: '',
+			},
+			'hugo':{
+				name: 'Нugo',
+				rating: 4.2,
+				img: { url: './img/partners/neospin.webp', alt: 'Нugo Logo' },
+				bonus: "Welcome bonus: 225% up to AU$1,000 + 275 Free Spins",
+				review: '',
+				play: '',
+			},
+			'rockwin-casino':{
+				name: 'Rockwin Casino',
+				rating: 4,
+				img: { url: './img/partners/neospin.webp', alt: 'Rockwin Casino Logo' },
+				bonus: "Welcome bonus: up to AU$6,000 + 400 Free Spins",
+				review: '',
+				play: '',
+			},
 		}
 	}
 }

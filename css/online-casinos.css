@@ -1,0 +1,44 @@
+.up-section {
+    background: url('../img/bg-online-casinos.png') center center no-repeat;
+    background-size: cover;
+}
+
+.up-section__wrapper {
+    height: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.up-section__block {
+    text-align: center;
+
+}
+
+.up-section__crochka {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 12px;
+    line-height: 150%;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.up-section__title {
+    font-weight: 700;
+    font-size: clamp(26px,2vw,40px);
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.up-section__text{
+    font-size: clamp(14px,2.5vw,16px);
+    line-height: 150%;
+    color: #fff;
+    max-width: 660px;
+    width: 100%;
+    margin: 0 auto;
+}
