@@ -55,6 +55,30 @@
     color: #fff;
     margin-bottom: 30px;
 }
+.best-casinos__btn-best{
+    flex-direction: column;
+}
+.best-casinos__btn-content{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+.best-casinos__links-payment{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+     /* display:none; */
+}
+.best-casinos__link-payment{
+    padding:7px 0;
+    font-size: clamp(14px,2vw,18px);
+    line-height: 140%;
+    font-weight: 500;
+    color: #fff;
+    text-align: left;
+}
 
 .best-casinos__block {
     display: flex;
