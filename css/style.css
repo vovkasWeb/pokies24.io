@@ -630,7 +630,7 @@ button {
 }
 
 .title__text-block,
-.main-title__text-block {
+.main-title__text-block{
 	font-size: clamp(22px, 2.5vw, 36px);
 	font-weight: 700;
 	line-height: 140%;
@@ -1254,7 +1254,22 @@ button {
 	background: #103956DB;
 	aspect-ratio: 1 / 1;
 	backdrop-filter: blur(9.699999809265137px)
-
+}
+.up-info__title {
+	font-size: clamp(26px, 2.5vw, 36px);
+	font-weight: 700;
+	line-height: 140%;
+	color: #ffffff;
+}
+.up-info__line{
+	padding-top: clamp(20px, 2vw, 30px);
+	display: flex;
+	gap: 4px;
+	font-size: 12px;
+	line-height: 140%;
+	font-weight: 500;
+	color: #fff;
+	margin-bottom: 5px;
 }
 
 @media (hover: hover) and (pointer: fine) {
