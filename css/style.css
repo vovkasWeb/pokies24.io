@@ -131,7 +131,7 @@ button {
 }
 
 .header__list-mobile-content {
-	padding-top: 30px;
+	padding-top: 20px;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
