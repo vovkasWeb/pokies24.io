@@ -294,8 +294,8 @@ export const pagas={
 }
 
 export const bestPartner={
-	'best-online-casinos-au':{
-			'caswino':{
+	'best-online-casinos-au':[
+			{
 				name: 'Caswino',
 				rating: 5,
 				img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
@@ -303,7 +303,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'neospin':{
+			{
 				name: 'Neospin',
 				rating: 5,
 				img: { url: './img/partners/neospin.webp', alt: 'Neospin Logo' },
@@ -311,7 +311,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'crown-slots':{
+			{
 				name: 'Crown Slots',
 				rating: 4.9,
 				img: { url: './img/partners/neospin.webp', alt: 'Crown SlotsLogo' },
@@ -319,7 +319,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'bdm-bet':{
+			{
 				name: 'BDM Bet',
 				rating: 4.8,
 				img: { url: './img/partners/neospin.webp', alt: 'BDM Bet Logo' },
@@ -327,7 +327,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'richard-casino':{
+			{
 				name: 'Richard Casino',
 				rating: 4.7,
 				img: { url: './img/partners/neospin.webp', alt: 'Richard Casino Logo' },
@@ -335,7 +335,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'axe-casino':{
+			{
 				name: 'Axe Casino',
 				rating: 4.5,
 				img: { url: './img/partners/neospin.webp', alt: 'Axe Casino Logo' },
@@ -343,7 +343,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'oscarspin':{
+			{
 				name: 'Oscarspin',
 				rating: 4.4,
 				img: { url: './img/partners/neospin.webp', alt: 'Oscarspin Logo' },
@@ -351,7 +351,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'sky-crown':{
+			{
 				name: 'SkyCrown',
 				rating: 4.3,
 				img: { url: './img/partners/neospin.webp', alt: 'SkyCrown Logo' },
@@ -359,7 +359,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'hugo':{
+			{
 				name: 'Нugo',
 				rating: 4.2,
 				img: { url: './img/partners/neospin.webp', alt: 'Нugo Logo' },
@@ -367,7 +367,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'rockwin-casino':{
+			{
 				name: 'Rockwin Casino',
 				rating: 4,
 				img: { url: './img/partners/neospin.webp', alt: 'Rockwin Casino Logo' },
@@ -375,9 +375,9 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-	},
-	'recommended-casinos':{
-			'caswino':{
+		],
+	'recommended-casinos':[
+			{
 				name: 'Caswino',
 				rating: 5,
 				img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
@@ -385,7 +385,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'neospin':{
+			{
 				name: 'Neospin',
 				rating: 5,
 				img: { url: './img/partners/neospin.webp', alt: 'Neospin Logo' },
@@ -393,7 +393,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'crown-slots':{
+			{
 				name: 'Crown Slots',
 				rating: 4.9,
 				img: { url: './img/partners/neospin.webp', alt: 'Crown SlotsLogo' },
@@ -401,7 +401,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'bdm-bet':{
+			{
 				name: 'BDM Bet',
 				rating: 4.8,
 				img: { url: './img/partners/neospin.webp', alt: 'BDM Bet Logo' },
@@ -409,7 +409,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'richard-casino':{
+			{
 				name: 'Richard Casino',
 				rating: 4.7,
 				img: { url: './img/partners/neospin.webp', alt: 'Richard Casino Logo' },
@@ -417,9 +417,9 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-	},
-	'mobile-apps-casino':{
-			'neospin':{
+		],
+	'mobile-apps-casino':[
+			{
 				name: 'Neospin',
 				rating: 5,
 				img: { url: './img/partners/neospin.webp', alt: 'Neospin Logo' },
@@ -427,7 +427,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'crown-slots':{
+			{
 				name: 'Crown Slots',
 				rating: 4.9,
 				img: { url: './img/partners/neospin.webp', alt: 'Crown SlotsLogo' },
@@ -435,7 +435,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'bdm-bet':{
+			{
 				name: 'BDM Bet',
 				rating: 4.8,
 				img: { url: './img/partners/neospin.webp', alt: 'BDM Bet Logo' },
@@ -443,7 +443,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'oscarspin':{
+			{
 				name: 'Oscarspin',
 				rating: 4.4,
 				img: { url: './img/partners/neospin.webp', alt: 'Oscarspin Logo' },
@@ -451,9 +451,9 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-	},
-	'best-live-casinos':{
-			'caswino':{
+		],
+	'best-live-casinos':[
+			{
 				name: 'Caswino',
 				rating: 5,
 				img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
@@ -461,7 +461,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'neospin':{
+			{
 				name: 'Neospin',
 				rating: 5,
 				img: { url: './img/partners/neospin.webp', alt: 'Neospin Logo' },
@@ -469,7 +469,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'crown-slots':{
+			{
 				name: 'Crown Slots',
 				rating: 4.9,
 				img: { url: './img/partners/neospin.webp', alt: 'Crown SlotsLogo' },
@@ -477,7 +477,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'hugo':{
+			{
 				name: 'Нugo',
 				rating: 4.2,
 				img: { url: './img/partners/neospin.webp', alt: 'Нugo Logo' },
@@ -485,7 +485,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'rockwin-casino':{
+			{
 				name: 'Rockwin Casino',
 				rating: 4,
 				img: { url: './img/partners/neospin.webp', alt: 'Rockwin Casino Logo' },
@@ -493,10 +493,10 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-	},
+		],
 	'payment-methods':{
-		'payid':{
-			'caswino':{
+		'payid':[
+			{
 				name: 'Caswino',
 				rating: 5,
 				img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
@@ -504,7 +504,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'richard-casino':{
+			{
 				name: 'Richard Casino',
 				rating: 4.7,
 				img: { url: './img/partners/neospin.webp', alt: 'Richard Casino Logo' },
@@ -512,7 +512,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'sky-crown':{
+			{
 				name: 'SkyCrown',
 				rating: 4.3,
 				img: { url: './img/partners/neospin.webp', alt: 'SkyCrown Logo' },
@@ -520,7 +520,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'rockwin-casino':{
+			{
 				name: 'Rockwin Casino',
 				rating: 4,
 				img: { url: './img/partners/neospin.webp', alt: 'Rockwin Casino Logo' },
@@ -528,9 +528,9 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-		},
-		'credit-cards':{
-			'caswino':{
+		],
+		'credit-cards':[
+			{
 				name: 'Caswino',
 				rating: 5,
 				img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
@@ -538,7 +538,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'neospin':{
+			{
 				name: 'Neospin',
 				rating: 5,
 				img: { url: './img/partners/neospin.webp', alt: 'Neospin Logo' },
@@ -546,7 +546,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'axe-casino':{
+			{
 				name: 'Axe Casino',
 				rating: 4.5,
 				img: { url: './img/partners/neospin.webp', alt: 'Axe Casino Logo' },
@@ -554,7 +554,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'sky-crown':{
+			{
 				name: 'SkyCrown',
 				rating: 4.3,
 				img: { url: './img/partners/neospin.webp', alt: 'SkyCrown Logo' },
@@ -562,7 +562,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'rockwin-casino':{
+			{
 				name: 'Rockwin Casino',
 				rating: 4,
 				img: { url: './img/partners/neospin.webp', alt: 'Rockwin Casino Logo' },
@@ -570,9 +570,9 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-		},
-		'crypto':{
-			'caswino':{
+		],
+		'crypto':[
+			{
 				name: 'Caswino',
 				rating: 5,
 				img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
@@ -580,7 +580,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'neospin':{
+			{
 				name: 'Neospin',
 				rating: 5,
 				img: { url: './img/partners/neospin.webp', alt: 'Neospin Logo' },
@@ -588,7 +588,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'crown-slots':{
+			{
 				name: 'Crown Slots',
 				rating: 4.9,
 				img: { url: './img/partners/neospin.webp', alt: 'Crown SlotsLogo' },
@@ -596,7 +596,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'richard-casino':{
+			{
 				name: 'Richard Casino',
 				rating: 4.7,
 				img: { url: './img/partners/neospin.webp', alt: 'Richard Casino Logo' },
@@ -604,7 +604,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'oscarspin':{
+			{
 				name: 'Oscarspin',
 				rating: 4.4,
 				img: { url: './img/partners/neospin.webp', alt: 'Oscarspin Logo' },
@@ -612,7 +612,7 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'sky-crown':{
+			{
 				name: 'SkyCrown',
 				rating: 4.3,
 				img: { url: './img/partners/neospin.webp', alt: 'SkyCrown Logo' },
@@ -620,9 +620,9 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-		},
-		'neosurf':{
-			'axe-casino':{
+		],
+		'neosurf':[
+			{
 				name: 'Axe Casino',
 				rating: 4.5,
 				img: { url: './img/partners/neospin.webp', alt: 'Axe Casino Logo' },
@@ -630,15 +630,14 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-			'oscarspin':{
+			{
 				name: 'Oscarspin',
 				rating: 4.4,
 				img: { url: './img/partners/neospin.webp', alt: 'Oscarspin Logo' },
 				bonus: "Welcome bonus: up to AU$4,000 + 225 Free Spins",
 				review: '',
 				play: '',
-			},
-			'rockwin-casino':{
+			},{
 				name: 'Rockwin Casino',
 				rating: 4,
 				img: { url: './img/partners/neospin.webp', alt: 'Rockwin Casino Logo' },
@@ -646,6 +645,6 @@ export const bestPartner={
 				review: '',
 				play: '',
 			},
-		}
+		]
 	}
 }

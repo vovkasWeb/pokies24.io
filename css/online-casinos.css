@@ -57,19 +57,27 @@
 }
 .best-casinos__btn-best{
     flex-direction: column;
+    gap:0px !important;
 }
 .best-casinos__btn-content{
     display: flex;
     gap: 10px;
     align-items: center;
+    color: #fff;
     width: 100%;
 }
 .best-casinos__links-payment{
-    padding-top: 20px;
-    display: flex;
     flex-direction: column;
     width: 100%;
-     /* display:none; */
+   visibility: hidden;
+   height: 0px;
+    display: flex;
+
+}
+.best-casinos__links-payment.open{
+    visibility: visible;
+    height: 100%;
+    padding-top: 20px;
 }
 .best-casinos__link-payment{
     padding:7px 0;
@@ -78,6 +86,10 @@
     font-weight: 500;
     color: #fff;
     text-align: left;
+}
+.best-casinos__link-payment.active,
+.best-casinos__btn.active{
+    color: #FFD700;
 }
 
 .best-casinos__block {
@@ -93,7 +105,8 @@
     flex: 0 0 20%;
 }
 
-.best-casinos__btn {
+.best-casinos__btn,
+.best-casinos__btn-best {
     padding: 12px 20px;
     border-radius: 12px;
     border: 1px solid #B5BFC7;
@@ -101,23 +114,26 @@
     align-items: center;
     gap: 10px;
     background: #10324C;
+    color: #fff;
     cursor: pointer;
 }
 
-.best-casinos__btn svg {
+.best-casinos__btn svg,
+.best-casinos__btn-best svg{
     max-width: 50px;
     max-height: 50px;
 }
 
-.best-casinos__btn span {
+.best-casinos__btn span,
+.best-casinos__btn-best span {
     font-size: clamp(14px, 2vw, 18px);
     line-height: 120%;
     font-weight: 600;
-    color: #fff;
+    width: 100%;
     text-align: left;
 }
 
-.best-casinos__items {
+.best-casinos__list {
     flex: 0 0 75%;
 }
 
