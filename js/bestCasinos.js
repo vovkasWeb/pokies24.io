@@ -1,4 +1,4 @@
-import { bestPartner } from './obj.js';
+import { bestPartner,titles } from './obj.js';
 
 let width = 0;
 const url = new URL(window.location.href); // текущий URL
@@ -9,6 +9,7 @@ const btnsSecond= document.querySelectorAll('.best-casinos__link-payment');
 const btnsOpen = document.querySelector('.best-casinos__btn-content');
 const btnsBlock = document.querySelector('.best-casinos__links-payment');
 const casinoList = document.querySelector('.best-casinos__list');
+const title = document.querySelector('.best-casinos__title');
 
 btnsOpen.addEventListener('click', () => {
     btnsBlock.classList.toggle('open');
@@ -74,17 +75,15 @@ function addActiveClass(category) {
 }
 
 const sort=(category='best-online-casinos-au')=>{
-    console.log(category)
+console.log(category)
   const foundObj = findObject(bestPartner, category);
   if (foundObj) {
-    console.log('Объект найден:');
-    console.log(foundObj);
+    title.textContent = titles[category];
     casinoList.innerHTML = '';
     foundObj.forEach(casino => {
         casinoList.appendChild(render(casino))
     })
     addActiveClass(category)
-    
 
   } else {
     console.log('Объект с таким ключом не найден');

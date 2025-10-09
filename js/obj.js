@@ -648,3 +648,14 @@ export const bestPartner={
 		]
 	}
 }
+
+export const titles={
+	'best-online-casinos-au': 'Best Online Casinos Australia',
+	'recommended-casinos': 'Recommended Casinos',
+	'mobile-apps-casino': 'Mobile Apps Casino',
+	'best-live-casinos': 'Best live Casinos',
+	'payid': 'Best PayId Casinos',
+	'credit-cards': 'Best Credit Сards Casinos',
+	'crypto': 'Best Crypto Casinos',
+	'neosurf': 'Best Neosurf Casinos',
+}
