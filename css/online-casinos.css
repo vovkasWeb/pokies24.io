@@ -45,7 +45,7 @@
 }
 
 .best-casinos {
-    padding: 60px 0;
+    padding: clamp(40px, 5vw, 60px) 0;
 }
 
 .best-casinos__title {
@@ -53,7 +53,7 @@
     line-height: 140%;
     font-weight: 700;
     color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: clamp(20px, 1vw, 30px);
 }
 .best-casinos__btn-best{
     flex-direction: column;
@@ -69,19 +69,19 @@
 .best-casinos__links-payment{
     flex-direction: column;
     width: 100%;
-   visibility: hidden;
-   height: 0px;
+    visibility: hidden;
+    height: 0px;
     display: flex;
 
 }
 .best-casinos__links-payment.open{
     visibility: visible;
     height: 100%;
-    padding-top: 20px;
+    padding-top: clamp(10px, 1vw, 20px);
 }
 .best-casinos__link-payment{
-    padding:7px 0;
-    font-size: clamp(14px,2vw,18px);
+    padding:clamp(4px , 0.5vw, 7px) 0;
+    font-size: clamp(14px,1vw,18px);
     line-height: 140%;
     font-weight: 500;
     color: #fff;
@@ -95,14 +95,13 @@
 .best-casinos__block {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
 }
 
 .best-casinos__btns {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    flex: 0 0 20%;
+    flex: 1 0 20%;
 }
 
 .best-casinos__btn,
@@ -126,7 +125,7 @@
 
 .best-casinos__btn span,
 .best-casinos__btn-best span {
-    font-size: clamp(14px, 2vw, 18px);
+    font-size: clamp(14px, 1.5vw, 18px);
     line-height: 120%;
     font-weight: 600;
     width: 100%;
@@ -134,7 +133,11 @@
 }
 
 .best-casinos__list {
-    flex: 0 0 75%;
+    flex: 1 1 80%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .best-casinos__item {
@@ -152,12 +155,12 @@
 .best-casinos__left {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: clamp(5px,1.2vw,30px);
 }
 
 .best-casinos__img {
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 100px;
+    max-height: 100px;
     width: 100%;
     height: 100%;
     aspect-ratio: 1 / 1;
@@ -172,7 +175,7 @@
 }
 
 .best-casinos__title-item {
-    font-size: clamp(18px, 2vw, 24px);
+    font-size: clamp(16px, 1.5vw, 24px);
     line-height: 140%;
     font-weight: 600;
     color: #fff;
@@ -180,7 +183,6 @@
 .best-casinos__rating-item{
     display: flex;
     align-items: center;
-    gap:4px;
 }
 .best-casinos__rating-item svg{
     width: 20px;
@@ -196,19 +198,20 @@
     color: #fff;
 }
 .rating__current{
-    font-size: clamp(14px, 2vw, 18px);
+    font-size: clamp(14px, 1vw, 18px);
 }
 .rating__divider{
-    font-size: clamp(10px, 2vw, 12px);
+    font-size: clamp(10px, 1vw, 12px);
 }
 .rating__total{
-    font-size: clamp(8px, 2vw, 10px);
+    font-size: 10px;
 }
 .best-casinos__text-item{
     padding: 8px 12px;
+    padding: clamp(4px,0.5vw,8px) clamp(4px,0.5vw,12px);
     border-radius: 12px;
     border: 1px solid #57626C;
-    font-size: clamp(12px, 2vw, 16px);
+    font-size: clamp(12px, 1.2vw, 16px);
     line-height: 140%;
     font-weight: 500;
     color: #fff;
@@ -225,8 +228,8 @@
 .best-casinos__link{
     border-radius: 10px;
     border: 1px solid #57626C;
-    padding: 12px 30px;
-    font-size: clamp(12px, 2vw, 16px);
+    padding: clamp(4px, 0.5vw, 12px) clamp(5px, 1vw, 30px);
+    font-size: clamp(12px, 1vw, 16px);
     line-height: 140%;
     font-weight: 500;
     width: 100%;
@@ -261,7 +264,158 @@
     max-height: 100%;
     aspect-ratio: 1 / 1;
 }
-/* 
+.best-casinos__item-mob{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid #57626C;
+    gap: 10px;
+    width: 100%;
+    background: #1D3A50;
+}
+.best-casinos__img-mob{
+    width: 82px;
+    height: 82px;
+    border-radius: 12px;
+}
+.best-casinos__rating-mob{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.best-casinos__line-mob{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 5px;
+}
+.best-casinos__rating-mob svg{
+   width: 12px;
+   height: 12px;
+}
+.best-casinos__info-mob{
+    width: 100%;
+}
+.best-casinos__title-mob{
+   font-size: 16px;
+   line-height: 140%;
+   font-weight: 600;
+   color: #fff;
+}
+.best-casinos__text-num{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+    margin: 0 auto;
+    margin-bottom: 7px;
+}
+.best-casinos__btn-mob{
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 10px;
+    flex: 1 1 50%;
+    text-align: center;
+}
+.best-casinos__btns-mob{
+     display: flex;
+     gap: 10px;
 
-<span class="text__line-block">pokies24.io</span>
-*/
+
+}
+.best-casinos__review-mob{
+    background: #00192B;
+
+    color: #fff;
+}
+.best-casinos__play-mob{
+    background: #FFD700;
+    color: #280F23;
+}
+
+@media (max-width: 1100px) {
+    .best-casinos__text-item {
+        max-width: 200px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .best-casinos__img{
+        width: 70px;
+        height: 70px;
+    }
+    .best-casinos__list{
+        padding-left: 10px;
+    }
+    .best-casinos__item{
+        padding: 10px;
+    }
+    .best-casinos__rating-item svg {
+        width: 15px;
+        height: 15px;
+    }
+    .best-casinos__reting-num{
+        padding-left:3px;
+        gap:1.5px;
+    }
+    .best-casinos__main-info{
+        gap: 0px;
+    }
+    
+}
+@media (max-width: 750px) {
+    .best-casinos__text-item{
+        width: 150px;
+    }
+    .best-casinos__img{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .best-casinos__block{
+        flex-direction: column;
+        gap:20px;
+    }
+    .best-casinos__list{
+        padding: 0;
+    
+    }
+    .best-casinos__text-item{
+       width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .best-casinos__btn svg,
+    .best-casinos__btn-best svg{
+        width: 30px;
+        height: 30px;
+    }
+    .best-casinos__title {
+        text-align: center;
+    }
+    .up-section {
+        background: url('../img/bg-online-casinos-mobile.png') center center no-repeat;
+        background-size: cover;
+    }
+    .best-casinos__reting-num {
+       line-height: 50%
+    }
+    
+}
+@media (max-width: 400px) {
+    .best-casinos__rating-mob svg{
+        width: 10px;
+        height: 10px;
+    }
+
+}
