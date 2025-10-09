@@ -138,11 +138,9 @@ const render=(casino)=>{
                     <div class="best-casinos__rating-mob">
                         ${rating}
                         <div class="best-casinos__reting-num">
-                            <span class="rating__current">5</span>
+                            <span class="rating__current">${casino.rating}</span>
                             <span class="rating__divider">/</span>
-                            <span class="rating__total">
-                            ${casino.rating}
-                            </span>
+                            <span class="rating__total">5</span>
                         </div>
                     </div>
                 </div>
@@ -167,9 +165,9 @@ const render=(casino)=>{
                     <div class="best-casinos__rating-item">
                         ${rating}
                         <div class="best-casinos__reting-num">
-                            <span class="rating__current">5</span>
+                            <span class="rating__current">${casino.rating}</span>
                             <span class="rating__divider">/</span>
-                            <span class="rating__total">${casino.rating}</span>
+                            <span class="rating__total">5</span>
                         </div>
                     </div>
                 </div>
