@@ -645,7 +645,7 @@ button {
 
 .title__text-block,
 .main-title__text-block{
-	font-size: clamp(22px, 2.5vw, 36px);
+	font-size: clamp(22px, 2vw, 36px);
 	font-weight: 700;
 	line-height: 140%;
 	color: #ffffff;
@@ -973,7 +973,7 @@ button {
 }
 
 .title-element__provider-focus {
-	font-size: clamp(18px, 1vw, 26px);
+	font-size: clamp(18px, 1.5vw, 26px);
 	line-height: 140%;
 	font-weight: 700;
 	color: #fff;
