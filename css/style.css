@@ -651,6 +651,16 @@ button {
 	color: #ffffff;
 	margin-bottom: clamp(5px, 1vw, 10px);
 }
+.text-block__line-date{
+	padding-bottom: 10px;
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 140%;
+	color: #9BADBB;
+}
 
 .text__text-block,
 .main-text__text-block,
