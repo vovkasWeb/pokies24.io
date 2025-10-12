@@ -79,7 +79,7 @@ export const category = {
 		{
 			img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
 			title: 'Caswino',
-			text: '600% UP TO 4800$ <br> +255 FREE SPINS',
+			text: '600% UP TO 4800$ <br> +255 Free SPINS',
 			btns: {
 				review: '',
 				play: '',
@@ -106,7 +106,7 @@ export const category = {
 		{
 			img: { url: './img/partners/neospin.webp', alt: 'Neospin Casino Logo' },
 			title: 'Neospin',
-			text: '600% UP TO 4800$ <br> +255 FREE SPINS',
+			text: '600% UP TO 4800$ <br> +255 Free SPINS',
 			btns: {
 				review: '',
 				play: '',
@@ -117,7 +117,7 @@ export const category = {
 		{
 			img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
 			title: 'Caswino',
-			text: '600% UP TO 4800$ <br> +255 FREE SPINS',
+			text: '600% UP TO 4800$ <br> +255 Free SPINS',
 			btns: {
 				review: '',
 				play: '',
@@ -197,9 +197,9 @@ export const pagas={
 		url: './',
 		pages:{}
 	},
-	'free-pokies':{
-		name: 'FREE POKIES',
-		url: './free-pokies',
+	'Free-pokies':{
+		name: 'Free POKIES',
+		url: './Free-pokies',
 		pages:{
 			'new-pokies':{
 				name: 'New Pokies',
@@ -299,7 +299,7 @@ export const bestPartner={
 				name: 'Caswino',
 				rating: 5,
 				img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
-				bonus: "600% up to 4800$ + 255 free Spins",
+				bonus: "600% up to 4800$ + 255 Free Spins",
 				review: './caswino-casino-review',
 				play: '',
 			},
@@ -381,7 +381,7 @@ export const bestPartner={
 				name: 'Caswino',
 				rating: 5,
 				img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
-				bonus: "600% up to 4800$ + 255 free Spins",
+				bonus: "600% up to 4800$ + 255 Free Spins",
 				review: './caswino-casino-review',
 				play: '',
 			},
@@ -457,7 +457,7 @@ export const bestPartner={
 				name: 'Caswino',
 				rating: 5,
 				img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
-				bonus: "600% up to 4800$ + 255 free Spins",
+				bonus: "600% up to 4800$ + 255 Free Spins",
 				review: './caswino-casino-review',
 				play: '',
 			},
@@ -500,7 +500,7 @@ export const bestPartner={
 				name: 'Caswino',
 				rating: 5,
 				img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
-				bonus: "600% up to 4800$ + 255 free Spins",
+				bonus: "600% up to 4800$ + 255 Free Spins",
 				review: './caswino-casino-review',
 				play: '',
 			},
@@ -534,7 +534,7 @@ export const bestPartner={
 				name: 'Caswino',
 				rating: 5,
 				img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
-				bonus: "600% up to 4800$ + 255 free Spins",
+				bonus: "600% up to 4800$ + 255 Free Spins",
 				review: './caswino-casino-review',
 				play: '',
 			},
@@ -576,7 +576,7 @@ export const bestPartner={
 				name: 'Caswino',
 				rating: 5,
 				img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
-				bonus: "600% up to 4800$ + 255 free Spins",
+				bonus: "600% up to 4800$ + 255 Free Spins",
 				review: './caswino-casino-review',
 				play: '',
 			},
