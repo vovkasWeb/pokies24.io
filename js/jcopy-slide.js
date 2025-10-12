@@ -39,32 +39,25 @@ function updateButtons() {
   }
 }
 
-
-
-
-// Прокрутка кнопками
 btnRight.addEventListener('click', scrollRight);
 btnLeft.addEventListener('click',scrollLeft);
 slider.addEventListener('scroll', updateButtons);
 
-// Инициализация состояния
-  updateSlideWidth();
-  updateButtons();
+
+updateSlideWidth();
+updateButtons();
 
 
 const cards = document.querySelectorAll('.slide');
 function enableMobileClick() {
-  if (window.innerWidth <= 1024) { // планшет и мобила
+  if (window.innerWidth <= 1024) {
     cards.forEach(card => {
       card.addEventListener('click', () => {
-        // выключаем актив для всех
         cards.forEach(c => c.classList.remove('active'));
-        // включаем только для текущей
         card.classList.add('active');
       });
     });
   } else {
-    // на ПК убираем клик
     cards.forEach(card => {
       card.classList.remove('active');
       card.onclick = null;
@@ -72,12 +65,9 @@ function enableMobileClick() {
   }
 }
 
-// запуск при загрузке
 enableMobileClick();
 
-// запуск при изменении размера
 window.addEventListener('resize', enableMobileClick);
-
 
 window.addEventListener('resize', () => {
     updateSlideWidth();

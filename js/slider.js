@@ -6,7 +6,6 @@ document.querySelectorAll('.sliders__content').forEach(sliderWrapper => {
   let slides = Array.from(slider.children);
   let slideWidth = slides[0].offsetWidth;
 
-  // клонируем слайды для бесконечности
   slides.forEach(slide => slider.appendChild(slide.cloneNode(true)));
 
   let position = 0;
@@ -62,7 +61,6 @@ document.querySelectorAll('.sliders__content').forEach(sliderWrapper => {
   btnRight.addEventListener('click', scrollRight);
   btnLeft.addEventListener('click', scrollLeft);
 
-  // === Свайп для мобильных ===
   let startX = 0;
   let startY = 0;
   let isTouching = false;
@@ -81,9 +79,9 @@ document.querySelectorAll('.sliders__content').forEach(sliderWrapper => {
     const diffY = e.touches[0].clientY - startY;
 
     if (Math.abs(diffX) > Math.abs(diffY)) {
-      e.preventDefault(); // запрещаем вертикальный скролл страницы
+      e.preventDefault(); 
     } else {
-      isTouching = false; // вертикальный скролл, отменяем свайп
+      isTouching = false; 
     }
   }, { passive: false });
 
@@ -100,7 +98,6 @@ document.querySelectorAll('.sliders__content').forEach(sliderWrapper => {
     }
   });
 
-  // === Обновление ширины слайдов при ресайзе ===
   window.addEventListener('resize', () => {
     slideWidth = slides[0].offsetWidth;
     slider.style.transition = 'none';
@@ -110,17 +107,20 @@ document.querySelectorAll('.sliders__content').forEach(sliderWrapper => {
 
 const cards = document.querySelectorAll('.slide');
 function enableMobileClick() {
-  if (window.innerWidth <= 1024) { // планшет и мобила
+  if(window.innerWidth <= 550){
+    const root = document.documentElement;
+    console.log(cards[0].offsetWidth);
+    root.style.setProperty('--after-width', `${cards[0].offsetWidth}px`);
+   
+  }
+  if (window.innerWidth <= 1024) { 
     cards.forEach(card => {
       card.addEventListener('click', () => {
-        // выключаем актив для всех
         cards.forEach(c => c.classList.remove('active'));
-        // включаем только для текущей
         card.classList.add('active');
       });
     });
   } else {
-    // на ПК убираем клик
     cards.forEach(card => {
       card.classList.remove('active');
       card.onclick = null;

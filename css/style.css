@@ -13,6 +13,10 @@ body {
 	letter-spacing: 0;
 }
 
+:root {
+	--after-width: 100px;
+}
+
 body.lock {
 	overflow: hidden;
 	position: fixed;
@@ -1078,7 +1082,7 @@ button {
 
 .faq__accordion {
 	margin-bottom: clamp(10px, 1vw, 15px);
-	padding: clamp(10px, 1.5vw, 15px) clamp(20px, 1vw, 40px);
+	padding: 15px clamp(20px, 1vw, 40px);
 	background: #10324c;
 	border: 1px solid #57626c;
 	border-radius: 17px;
@@ -1223,7 +1227,7 @@ button {
 	width: var(--after-width, 100px);
 	height: 100%;
 	pointer-events: none;
-	background: linear-gradient(90deg, rgba(27, 56, 76, 0.0) 0%, rgba(27, 56, 76, 0.2) 12.02%, rgba(27, 56, 76, 0.3) 27.67%, rgba(5, 36, 58, 0.8) 52.39%, rgba(3, 29, 49, 0.900295) 75.33%, #011727 100%);
+	background: linear-gradient(90deg, rgb(27 56 76 / 0%) 0%, #02111b 100%)
 }
 
 .slider__btn line {
@@ -1620,7 +1624,6 @@ button {
 	.practical__element {
 		align-items: start;
 	}
-	
 
 	.bonuses__item svg {
 		height: 50px;

@@ -27,8 +27,19 @@ function openAccordion(button) {
   button.setAttribute('aria-expanded', 'true')
 
   content.hidden = false
-  content.style.height = content.scrollHeight + 'px'
-  content.style.padding='0px'
+
+// Сначала сбрасываем высоту и пересчитываем layout
+content.style.height = '0px'
+content.offsetHeight 
+
+// Теперь плавно задаём нужную высоту
+content.style.height = content.scrollHeight + 'px'
+content.style.padding = '0px 0px'
+
+// После завершения анимации сбрасываем высоту на auto
+content.addEventListener('transitionend', () => {
+  content.style.height = 'auto'
+}, { once: true })
 
   icon.style.transform = 'rotate(180deg)'
   button.closest('.faq__accordion').style.background =
@@ -42,8 +53,12 @@ function closeAccordion(button) {
   button.classList.remove('open')
   button.setAttribute('aria-expanded', 'false')
 
-  content.style.height = 0
-content.style.padding='0px 20px'
+  content.style.height = content.scrollHeight + 'px'
+  content.offsetHeight // принудительный reflow
+
+  content.style.transition = 'height 0.3s ease'
+  content.style.height = '0px'
+  content.style.padding = '0px 20px'
   setTimeout(() => (content.hidden = true), 300)
 
   icon.style.transform = 'rotate(0deg)'
