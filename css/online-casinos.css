@@ -358,9 +358,11 @@
         text-align: center;
     }
     .best-casinos__reting-num {
-       line-height: 50%
+       line-height: 50%;
     }
-    
+    .best-casinos__text-num{
+        text-transform: uppercase;
+    }
 }
 @media (max-width: 400px) {
     .best-casinos__rating-mob svg{
