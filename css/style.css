@@ -1333,7 +1333,7 @@ button {
 
 .up-section__title {
 	font-weight: 700;
-	font-size: clamp(26px, 2vw, 40px);
+	font-size: clamp(26px, 3vw, 40px);
 	line-height: 140%;
 	text-transform: uppercase;
 	color: #fff;
