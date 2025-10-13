@@ -109,7 +109,6 @@ const cards = document.querySelectorAll('.slide');
 function enableMobileClick() {
   if(window.innerWidth <= 550){
     const root = document.documentElement;
-    console.log(cards[0].offsetWidth);
     root.style.setProperty('--after-width', `${cards[0].offsetWidth}px`);
    
   }

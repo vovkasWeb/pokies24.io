@@ -27,7 +27,6 @@ const clierActiveClass = ()=>{
 
 const activeClass=(target)=>{
     const filterValue = target.currentTarget.dataset.filter; 
-    console.log('data-filter нажатой кнопки:', filterValue);
     url.searchParams.set('category', filterValue);
     window.history.replaceState(null, '', url.toString());
     sort(filterValue)
@@ -82,7 +81,6 @@ function addActiveClass(category) {
 }
 
 const sort=(category='best-online-casinos-au')=>{
-console.log(category)
   const foundObj = findObject(bestPartner, category);
   if (foundObj) {
     title.textContent = titles[category];
@@ -134,7 +132,6 @@ const render=(casino)=>{
     let rating = (generateRating(casino.rating))
     let card ='';
     if(width < 500) {
-        console.log(casino.bonus.includes('+')? casino.bonus.replace(/\+/g, '<br>+') : casino.bonus);
         card = document.createElement('div');
         card.className = 'best-casinos__item-mob';
         card.innerHTML =`

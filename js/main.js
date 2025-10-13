@@ -42,7 +42,7 @@ const viewElements = filter => {
 btns.forEach(btn => {
 	btn.addEventListener('click', e => {
 		if (filter == e.currentTarget.dataset.filter) {
-			console.log(filter)
+			//console.log(filter)
 			return
 		}
 		filter = e.currentTarget.dataset.filter
