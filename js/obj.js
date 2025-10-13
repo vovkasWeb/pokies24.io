@@ -505,11 +505,11 @@ export const bestPartner={
 				play: '',
 			},
 			{
-				name: 'Richard Casino',
-				rating: 4.7,
-				img: { url: './img/partners/richard.webp', alt: 'Richard Casino Logo' },
-				bonus: "up to AU$5,000 + 500 Free Spins",
-				review: './richard-casino-review',
+				name: 'Oscarspin',
+				rating: 4.4,
+				img: { url: './img/partners/oscarspin.webp', alt: 'Oscarspin Logo' },
+				bonus: "up to AU$4,000 + 225 Free Spins",
+				review: './oscarspin-review',
 				play: '',
 			},
 			{
