@@ -1,17 +1,14 @@
-
-console.log('sss')
-var myHeaders = new Headers();
-myHeaders.append("Content-Type", "application/json");
-myHeaders.append("Accept", "application/json");
-myHeaders.append("Origin", "yourdomain.com");
-
-var requestOptions = {
+fetch("https://slotslaunch.com/api/games?token=pHUifjxaWJ7D7TIrpfu3LkxVYRhkjAW8MDtn0L5CgXVLVKZax3", {
   method: 'GET',
-  headers: myHeaders,
-  redirect: 'follow'
-};
-
-fetch("https://slotslaunch.test/api/games?pHUifjxaWJ7D7TIrpfu3LkxVYRhkjAW8MDtn0L5CgXVLVKZax3", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
+  headers: {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "Origin": "вашдомен.com"
+  }
+})
+.then(res => res.json())
+.then(data => {
+  console.log(data);
+  // отображение игр, iframe-линков и т.д.
+})
+.catch(err => console.error(err));
