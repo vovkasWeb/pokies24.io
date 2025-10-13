@@ -198,7 +198,7 @@ export const pagas={
 		pages:{}
 	},
 	'Free-pokies':{
-		name: 'Free POKIES',
+		name: 'FREE POKIES',
 		url: './Free-pokies',
 		pages:{
 			'new-pokies':{

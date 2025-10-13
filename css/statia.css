@@ -1,0 +1,12 @@
+.header-game__wrapper{
+    margin: 0 auto;
+}
+
+.header-game__title{
+    font-size: clamp(20px,5vw,40px);
+    line-height: 140%;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+}
