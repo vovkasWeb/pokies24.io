@@ -173,7 +173,7 @@ const render=(casino)=>{
                 </div>
             </div>
             <div class="best-casinos__text-item">
-                <p>Welcome bonus: ${casino.bonus}</p>
+                <p>Welcome bonus: ${casino.bonus.includes('+')? casino.bonus.replace(/\+/g, '<br>+') : casino.bonus}</p>
             </div>
             <div class="best-casinos__links">
                 <a class="best-casinos__link best-casinos__link-review" href="${casino.review}">

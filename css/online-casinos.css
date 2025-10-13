@@ -182,8 +182,8 @@
 .best-casinos__link{
     border-radius: 10px;
     border: 1px solid #57626C;
-    padding: clamp(4px, 0.5vw, 12px) clamp(5px, 1vw, 30px);
-    font-size: clamp(12px, 1vw, 16px);
+    padding: clamp(4px, 1vw, 12px) clamp(5px, 2vw, 30px);
+    font-size: clamp(12px, 1.5vw, 16px);
     line-height: 140%;
     font-weight: 500;
     width: 100%;
