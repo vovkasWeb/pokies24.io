@@ -82,7 +82,7 @@
 
 .best-casinos__btn span,
 .best-casinos__btn-best span {
-    font-size: clamp(14px, 1.5vw, 18px);
+    font-size: clamp(16px, 1.5vw, 18px);
     line-height: 120%;
     font-weight: 600;
     width: 100%;
@@ -212,9 +212,9 @@
    
 }
 .element__provider-focus .img__provider-focus{
-    max-width: 110px;
-    max-height: 110px;
-
+    width: 110px;
+    height: 110px;
+    aspect-ratio: 1 / 1;
 }
 .img__provider-focus img{
     max-width: 100%;
@@ -350,6 +350,11 @@
     .best-casinos__text-item{
        width: 100%;
     }
+    .element__provider-focus .img__provider-focus {
+        width: 90px;
+        height: 90px;
+        aspect-ratio: 1 / 1;
+    }
 }
 @media (max-width: 500px) {
     .best-casinos__btn svg,
@@ -365,6 +370,11 @@
     }
     .best-casinos__text-num{
         text-transform: uppercase;
+    }
+    .element__provider-focus .img__provider-focus {
+        width: 70px;
+        height: 70px;
+        aspect-ratio: 1 / 1;
     }
 }
 @media (max-width: 400px) {
