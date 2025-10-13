@@ -682,6 +682,9 @@ button {
 	color: #C0CAD5;
 	text-decoration: underline;
 }
+a.text__line-block{
+	cursor: pointer;
+}
 .text__text-block.lastElement {
 	margin-bottom: 0px;
 }
