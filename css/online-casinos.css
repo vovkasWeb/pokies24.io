@@ -41,9 +41,12 @@
     color: #fff;
     text-align: left;
 }
-.best-casinos__link-payment.active,
-.best-casinos__btn.active{
+.best-casinos__link-payment.active{
     color: #FFD700;
+}
+.best-casinos__btn-best.active,
+.best-casinos__btn.active {
+    background: #295374;
 }
 
 .best-casinos__block {

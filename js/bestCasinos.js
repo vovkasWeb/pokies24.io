@@ -7,6 +7,7 @@ const params = new URLSearchParams(url.search);
 const btnsFirst = document.querySelectorAll('.best-casinos__btn');
 const btnsSecond= document.querySelectorAll('.best-casinos__link-payment');
 const btnsOpen = document.querySelector('.best-casinos__btn-content');
+const containerPaumentBtns = document.querySelector('.best-casinos__btn-best');
 const btnsBlock = document.querySelector('.best-casinos__links-payment');
 const casinoList = document.querySelector('.best-casinos__list');
 const title = document.querySelector('.best-casinos__title');
@@ -61,12 +62,18 @@ function findObject(obj, key) {
 function addActiveClass(category) {
   btnsFirst.forEach(btn => {
     if (btn.dataset.filter === category) {
+        if(containerPaumentBtns.classList.contains('active')){
+            containerPaumentBtns.classList.remove('active')
+        }
       btn.classList.add('active');
       return true;
     }
   });
   btnsSecond.forEach(btn => {
     if (btn.dataset.filter === category) {
+        if(!containerPaumentBtns.classList.contains('active')){
+            containerPaumentBtns.classList.add('active')
+        }
       btnsBlock.classList.add('open'); // открываем btnsBlock
       btn.classList.add('active');
       return true;
