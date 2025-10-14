@@ -1417,10 +1417,10 @@ a.text__line-block {
 	text-decoration: none;
 	transition: color 0.2s ease;
 }
-
-
-
-
+.up-info__wrapper .breadcrumbs ol{
+	justify-content: start;
+	
+}
 
 
 

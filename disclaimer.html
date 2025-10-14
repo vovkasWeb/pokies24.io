@@ -160,11 +160,20 @@
 <section class="text-block section fisrt-section">
 			<div class="container">
 				<div class="up-info__wrapper">
-					<div class="up-info__line">
-						<a href="./" class="up-info__link">Home</a>
-						<span>></span>
-						<a href="./disclamer.html" class="up-info__link">Disclaimer</a>
-					</div>
+					<nav class="breadcrumbs" aria-label="Breadcrumb">
+						<ol itemscope itemtype="https://schema.org/BreadcrumbList">
+							<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+							<a itemprop="item" href="/">
+								<span itemprop="name">Home</span>
+							</a>
+							<meta itemprop="position" content="1" />
+							</li>
+							<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+							<span itemprop="name">Disclaimer</span>
+							<meta itemprop="position" content="2" />
+							</li>
+						</ol>
+					</nav>
 					<h1 class="up-info__title">Disclaimer</h1>
 				</div>
 				<div class="wrapper__text-block wrapper-dock-text-block">
