@@ -360,9 +360,10 @@ button {
 	font-size: 16px;
 	background-color: #ffd700;
 	transition: all 0.4s ease;
+	border: 1px solid transparent;
 }
 .main__btn:hover{
-	border: 1px solid #FFD700;
+	border-color: #FFD700;
 	background: transparent;
 	color: #FFD500;
 }
