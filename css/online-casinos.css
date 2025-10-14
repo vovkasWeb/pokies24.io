@@ -194,7 +194,7 @@
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     
 
 }
@@ -203,15 +203,19 @@
     color: #fff;
 }
 .best-casinos__link-review:hover{
-    background: #01668e;
+    border: 1px solid #B5BFC7;
+    color: #B5BFC7;
+    background: transparent;
 }
 .best-casinos__link-now{
     background: #FFD700;
     color: #000;
 }
-.best-casinos__link-now:hover{
-    background: #dfad08;
-   
+.best-casinos__link-now:hover {
+    border: 1px solid #FFD700;
+    color: #FFD700;
+    background: transparent;
+
 }
 .element__provider-focus .img__provider-focus{
     width: 110px;

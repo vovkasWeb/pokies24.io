@@ -362,8 +362,9 @@ button {
 	transition: all 0.4s ease;
 }
 .main__btn:hover{
-	background-color: #fff;
-	color: #000;
+	border: 1px solid #FFD700;
+	background: transparent;
+	color: #FFD500;
 }
 /* block category */
 
