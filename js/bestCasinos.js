@@ -138,7 +138,7 @@ const render=(casino)=>{
             <img class="best-casinos__img-mob" src="${casino.img.url}" alt="${casino.img.alt}">
             <div class="best-casinos__info-mob">
                 <div class="best-casinos__line-mob">
-                    <h3 class="best-casinos__title-mob">${casino.name}</h3>
+                    <h4 class="best-casinos__title-mob">${casino.name}</h4>
                     <div class="best-casinos__rating-mob">
                         ${rating}
                         <div class="best-casinos__reting-num">
