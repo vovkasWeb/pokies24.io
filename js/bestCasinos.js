@@ -152,8 +152,8 @@ const render=(casino)=>{
                         ${casino.bonus.includes('+')? casino.bonus.replace(/\+/g, '<br>+') : casino.bonus}
                     </p>
                     <div class="best-casinos__btns-mob">
-                        <a href="${casino.review}" class="best-casinos__btn-mob best-casinos__review-mob">Review</a>
-                        <a href="${casino.play}" class="best-casinos__btn-mob best-casinos__play-mob">Play</a>
+                        <a href="${casino.review}" class="best-casinos__btn-mob btn-blue">Review</a>
+                        <a href="${casino.play}" class="best-casinos__btn-mob btn-yello">Play</a>
                     </div>
                 </div>
         `
@@ -180,10 +180,10 @@ const render=(casino)=>{
                 <p>Welcome bonus: ${casino.bonus.includes('+')? casino.bonus.replace(/\+/g, '<br>+') : casino.bonus}</p>
             </div>
             <div class="best-casinos__links">
-                <a class="best-casinos__link best-casinos__link-review" href="${casino.review}">
+                <a class="best-casinos__link btn-blue" href="${casino.review}">
                     Review
                 </a>
-                <a class="best-casinos__link best-casinos__link-now" href="${casino.play}">
+                <a class="best-casinos__link btn-yello" href="${casino.play}">
                     Play Now
                 </a>
             </div>

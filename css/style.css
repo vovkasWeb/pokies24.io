@@ -26,6 +26,34 @@ body.lock {
 	left: 0;
 }
 
+.btn-blue{
+	background: #00192B;
+	color: #fff;
+	border: 1px solid transparent;
+	transition: all 0.4s ease;
+}
+
+.btn-blue:hover {
+	border-color: #B5BFC7;
+	color: #B5BFC7;
+	background: transparent;
+}
+
+.btn-yello {
+	background: #FFD700;
+	color: #000;
+	border: 1px solid transparent;
+	transition: all 0.4s ease;
+}
+
+.btn-yello:hover {
+	border-color: #FFD700;
+	color: #FFD700;
+	background: transparent;
+
+}
+
+
 span,
 div,
 ul,
@@ -185,8 +213,9 @@ button {
 	right: -175px;
 	font-weight: 400;
 	text-transform: none;
-
 }
+
+
 
 .header__list li:hover {
 	color: #FFD700;
@@ -352,21 +381,14 @@ button {
 }
 
 .main__btn {
-	color: #000;
 	padding: 7px 15px;
 	border-radius: 12px;
 	font-weight: 600;
 	line-height: 140%;
 	font-size: 16px;
-	background-color: #ffd700;
-	transition: all 0.4s ease;
 	border: 1px solid transparent;
 }
-.main__btn:hover{
-	border-color: #FFD700;
-	background: transparent;
-	color: #FFD500;
-}
+
 /* block category */
 
 .category__title {
@@ -495,15 +517,6 @@ button {
 	padding: 7px 23px;
 }
 
-.category__btn-review {
-	background: #00192b;
-	color: #fff;
-}
-
-.category__btn-play {
-	background: #ffc700;
-	color: #000;
-}
 
 /*providers*/
 .providers {
@@ -1168,8 +1181,17 @@ a.text__line-block{
 
 #mlb2-30764281.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button {
 	font-weight: 600 !important;
+	background: #FFD700 !important;
+	color: #000 !important;
+	border: 1px solid transparent !important;
+	transition: all 0.4s ease !important;
 }
 
+#mlb2-30764281.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover{
+	border-color: #FFD700 !important;
+	color: #FFD700 !important;
+	background-color: #011320 !important;
+}
 
 
 .sliders__content {

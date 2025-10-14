@@ -186,7 +186,6 @@
 }
 .best-casinos__link{
     border-radius: 10px;
-    border: 1px solid #57626C;
     padding: clamp(4px, 1vw, 12px) clamp(5px, 2vw, 30px);
     font-size: clamp(12px, 1.5vw, 16px);
     line-height: 140%;
@@ -194,31 +193,8 @@
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    transition: all 0.4s ease;
-    
+}
 
-}
-.best-casinos__link-review{
-    background: #00192B;
-    color: #fff;
-    border: 1px solid transparent;
-}
-.best-casinos__link-review:hover{
-    border-color:#B5BFC7;
-    color: #B5BFC7;
-    background: transparent;
-}
-.best-casinos__link-now{
-    background: #FFD700;
-    color: #000;
-    border: 1px solid transparent;
-}
-.best-casinos__link-now:hover {
-    border-color: #FFD700;
-    color: #FFD700;
-    background: transparent;
-
-}
 .element__provider-focus .img__provider-focus{
     width: 110px;
     height: 110px;
@@ -292,15 +268,7 @@
 
 
 }
-.best-casinos__review-mob{
-    background: #00192B;
 
-    color: #fff;
-}
-.best-casinos__play-mob{
-    background: #FFD700;
-    color: #280F23;
-}
 
 @media (max-width: 1200px) {
     .best-casinos__text-item{

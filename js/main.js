@@ -15,8 +15,8 @@ const element = element => {
                ${element.text}
             </span>
             <div class="category__btns-item">
-                <a class="category__btn-review" href="${element.review}">Review</a>
-                <a class="category__btn-play" href="${element.play}">Play</a>
+                <a class="category__btn-review btn-blue" href="${element.review}">Review</a>
+                <a class="category__btn-play btn-yello" href="${element.play}">Play</a>
             </div>
         </div>
     </div>
