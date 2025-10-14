@@ -201,18 +201,20 @@
 .best-casinos__link-review{
     background: #00192B;
     color: #fff;
+    border: 1px solid transparent;
 }
 .best-casinos__link-review:hover{
-    border: 1px solid #B5BFC7;
+    border-color:#B5BFC7;
     color: #B5BFC7;
     background: transparent;
 }
 .best-casinos__link-now{
     background: #FFD700;
     color: #000;
+    border: 1px solid transparent;
 }
 .best-casinos__link-now:hover {
-    border: 1px solid #FFD700;
+    border-color: #FFD700;
     color: #FFD700;
     background: transparent;
 
