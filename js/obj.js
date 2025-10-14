@@ -254,29 +254,30 @@ export const pagas={
 			},
 			'payment-methods':{
 				name: 'Payment Methods',
-				url: './payment-methods',
-				pages:{
-					"payid": {
-						name: 'PayId',
-						url: './payid',
-						pages:{}
-					},
-					"credit-cards": {
-						name: 'Credit cards',
-						url: './credit-cards',
-						pages:{}
-					},
-					"crypto": {
-						name: 'Crypto',
-						url: './crypto',
-						pages:{}
-					},
-					"neosurf": {
-						name: 'Neosurf',
-						url: './neosurf',
-						pages:{}
-					},
-				}
+				url: './online-casinos',
+				pages:{},
+				// pages:{
+				// 	"payid": {
+				// 		name: 'PayId',
+				// 		url: './payid',
+				// 		pages:{}
+				// 	},
+				// 	"credit-cards": {
+				// 		name: 'Credit cards',
+				// 		url: './credit-cards',
+				// 		pages:{}
+				// 	},
+				// 	"crypto": {
+				// 		name: 'Crypto',
+				// 		url: './crypto',
+				// 		pages:{}
+				// 	},
+				// 	"neosurf": {
+				// 		name: 'Neosurf',
+				// 		url: './neosurf',
+				// 		pages:{}
+				// 	},
+				// }
 			},
 		}
 	},
