@@ -83,6 +83,7 @@
     line-height: 120%;
     font-weight: 600;
     width: 100%;
+    text-transform: capitalize;
     text-align: left;
 }
 
