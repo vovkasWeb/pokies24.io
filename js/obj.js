@@ -199,39 +199,40 @@ export const pagas={
 	},
 	'Free-pokies':{
 		name: 'FREE POKIES',
-		url: './Free-pokies',
-		pages:{
-			'new-pokies':{
-				name: 'New Pokies',
-				url: './new-pokies',
-				pages:{}
-			},
-			'popular-pokies':{
-				name: 'Popular Pokies',
-				url: './popular-pokies',
-				pages:{}
-			},
-			'pokies-by-provider':{
-				name: 'Pokies by Provider',
-				url: './pokies-by-provider',
-				pages:{}
-			},
-			'table-games':{
-				name: 'Table Games',
-				url: './table-games',
-				pages:{}
-			},
-			'live-dealer':{
-				name: 'Live Dealer',
-				url: './live-dealer',
-				pages:{}
-			},
-			'crash-pokies':{
-				name: 'Crash Pokies',
-				url: './crash-pokies',
-				pages:{}
-			},
-		}
+		url: './free-pokies',
+		pages:{}
+		// pages:{
+		// 	'new-pokies':{
+		// 		name: 'New Pokies',
+		// 		url: './new-pokies',
+		// 		pages:{}
+		// 	},
+		// 	'popular-pokies':{
+		// 		name: 'Popular Pokies',
+		// 		url: './popular-pokies',
+		// 		pages:{}
+		// 	},
+		// 	'pokies-by-provider':{
+		// 		name: 'Pokies by Provider',
+		// 		url: './pokies-by-provider',
+		// 		pages:{}
+		// 	},
+		// 	'table-games':{
+		// 		name: 'Table Games',
+		// 		url: './table-games',
+		// 		pages:{}
+		// 	},
+		// 	'live-dealer':{
+		// 		name: 'Live Dealer',
+		// 		url: './live-dealer',
+		// 		pages:{}
+		// 	},
+		// 	'crash-pokies':{
+		// 		name: 'Crash Pokies',
+		// 		url: './crash-pokies',
+		// 		pages:{}
+		// 	},
+		// }
 	},
 	'online-casino':{
 		name: 'ONLINE CASINOS',
