@@ -355,7 +355,7 @@ button {
 
 .main__title {
 	font-weight: 700;
-	font-size: clamp(26px, 4vw, 40px);
+	font-size: clamp(26px, 4vw, 36px);
 	line-height: 140%;
 	margin-bottom: clamp(5px, 1vw, 15px);
 	max-width: 620px;
@@ -394,7 +394,7 @@ button {
 .category__title {
 	text-align: center;
 	font-weight: 700;
-	font-size: clamp(20px, 2.5vw, 36px);
+	font-size: clamp(22px, 2.5vw, 30px);
 	line-height: 140%;
 	margin-bottom: 15px;
 	color: #fff;
@@ -490,7 +490,7 @@ button {
 
 .category__title-item {
 	font-family: 600;
-	font-size: clamp(16px, 2vw, 24px);
+	font-size: clamp(18px, 2vw, 22px);
 	line-height: 140%;
 	color: #fff;
 }
@@ -671,7 +671,7 @@ button {
 
 .title__text-block,
 .main-title__text-block{
-	font-size: clamp(22px, 2vw, 36px);
+	font-size: clamp(22px, 2vw, 30px);
 	font-weight: 700;
 	line-height: 140%;
 	color: #ffffff;
@@ -788,7 +788,7 @@ a.text__line-block{
 
 .title__why-demo,
 .title__real-money {
-	font-size: clamp(22px, 2.5vw, 34px);
+	font-size: clamp(22px, 2.5vw, 30px);
 	font-weight: 700;
 	line-height: 110%;
 	margin-bottom: clamp(5px, 2vw, 10px);
@@ -874,7 +874,7 @@ a.text__line-block{
 }
 
 .title-item__real-money {
-	font-size: clamp(20px, 1vw, 26px);
+	font-size: clamp(18px, 1vw, 22px);
 	font-weight: 700;
 	line-height: 140%;
 	color: #fff;
@@ -897,7 +897,7 @@ a.text__line-block{
 }
 
 .bonuses__title {
-	font-size: clamp(22px, 2.5vw, 34px);
+	font-size: clamp(22px, 2.5vw, 30px);
 	line-height: 140%;
 	font-weight: 700;
 	color: #fff;
@@ -969,7 +969,7 @@ a.text__line-block{
 }
 
 .title__provider-focus {
-	font-size: clamp(22px, 2.5vw, 34px);
+	font-size: clamp(22px, 2.5vw, 30px);
 	line-height: 140%;
 	font-weight: 700;
 	color: #fff;
@@ -1015,7 +1015,7 @@ a.text__line-block{
 }
 
 .title-element__provider-focus {
-	font-size: clamp(18px, 1.5vw, 26px);
+	font-size: clamp(18px, 1.5vw, 22px);
 	line-height: 140%;
 	font-weight: 700;
 	color: #fff;
@@ -1052,7 +1052,7 @@ a.text__line-block{
 }
 
 .practical__title {
-	font-size: clamp(22px, 2.5vw, 34px);
+	font-size: clamp(22px, 2.5vw, 30px);
 	font-weight: 700;
 	line-height: 140%;
 	color: #fff;
@@ -1097,7 +1097,7 @@ a.text__line-block{
 
 
 .faq__title {
-	font-size: clamp(26px, 2.5vw, 36px);
+	font-size: clamp(22px, 2.5vw, 30px);
 	font-weight: 700;
 	line-height: 140%;
 	text-align: center;
@@ -1365,7 +1365,7 @@ a.text__line-block{
 
 .up-section__title {
 	font-weight: 700;
-	font-size: clamp(26px, 3vw, 40px);
+	font-size: clamp(26px, 3vw, 36px);
 	line-height: 140%;
 	text-transform: capitalize;
 	color: #fff;
