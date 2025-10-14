@@ -236,50 +236,50 @@ export const pagas={
 	'online-casino':{
 		name: 'ONLINE CASINOS',
 		url: './online-casino',
-		pages:{
-			'recommended':{
-				name: 'Recommended',
-				url: './recommended',
-				pages:{}
-			},
-			'mobile-apps-casino':{
-				name: 'Mobile apps casino',
-				url: './mobile-apps-casino',
-				pages:{}
-			},
-			'best-live-casinos':{
-				name: 'Best live Casinos',
-				url: './best-live-casinos',
-				pages:{}
-			},
-			'payment-methods':{
-				name: 'Payment Methods',
-				url: './online-casinos',
-				pages:{},
-				// pages:{
-				// 	"payid": {
-				// 		name: 'PayId',
-				// 		url: './payid',
-				// 		pages:{}
-				// 	},
-				// 	"credit-cards": {
-				// 		name: 'Credit cards',
-				// 		url: './credit-cards',
-				// 		pages:{}
-				// 	},
-				// 	"crypto": {
-				// 		name: 'Crypto',
-				// 		url: './crypto',
-				// 		pages:{}
-				// 	},
-				// 	"neosurf": {
-				// 		name: 'Neosurf',
-				// 		url: './neosurf',
-				// 		pages:{}
-				// 	},
-				// }
-			},
-		}
+		pages:{},
+		// pages:{
+		// 	'recommended':{
+		// 		name: 'Recommended',
+		// 		url: './recommended',
+		// 		pages:{}
+		// 	},
+		// 	'mobile-apps-casino':{
+		// 		name: 'Mobile apps casino',
+		// 		url: './mobile-apps-casino',
+		// 		pages:{}
+		// 	},
+		// 	'best-live-casinos':{
+		// 		name: 'Best live Casinos',
+		// 		url: './best-live-casinos',
+		// 		pages:{}
+		// 	},
+		// 	'payment-methods':{
+		// 		name: 'Payment Methods',
+		// 		url: './online-casinos',
+		// 		pages:{
+		// 			"payid": {
+		// 				name: 'PayId',
+		// 				url: './payid',
+		// 				pages:{}
+		// 			},
+		// 			"credit-cards": {
+		// 				name: 'Credit cards',
+		// 				url: './credit-cards',
+		// 				pages:{}
+		// 			},
+		// 			"crypto": {
+		// 				name: 'Crypto',
+		// 				url: './crypto',
+		// 				pages:{}
+		// 			},
+		// 			"neosurf": {
+		// 				name: 'Neosurf',
+		// 				url: './neosurf',
+		// 				pages:{}
+		// 			},
+		// 		}
+		// 	},
+		// }
 	},
 	'about':{
 		name: 'ABOUT US',
