@@ -359,8 +359,12 @@ button {
 	line-height: 140%;
 	font-size: 16px;
 	background-color: #ffd700;
+	transition: all 0.4s ease;
 }
-
+.main__btn:hover{
+	background-color: #fff;
+	color: #000;
+}
 /* block category */
 
 .category__title {
@@ -678,7 +682,7 @@ button {
 	color: #ffffff;
 	margin-bottom: clamp(5px, 1vw, 10px);
 }
-.text__text-block .text__line-block {
+.text__text-block .text__line-block, a.text__line-block {
 	color: #C0CAD5;
 	text-decoration: underline;
 }
