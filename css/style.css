@@ -1249,18 +1249,16 @@ a.text__line-block{
 	padding: 0 5px;
 	border-radius: 10px;
 	box-sizing: border-box;
-
 }
+
 .slide .slider__contener {
 	width: 100%;
 	max-width: 217px;
 	height: -webkit-fill-available;
 	aspect-ratio: 1 / 1;
 	object-fit: cover;
-	pointer-events: none;
 	display: block;
 	position: relative;
-	/* margin: 0 auto; */
 }
 
 .slide img {
@@ -1356,7 +1354,6 @@ a.text__line-block{
 	margin: 0 auto;
 }
 
-
 @media (hover: hover) and (pointer: fine) {
 	.slide:hover .slider__info {
 		opacity: 1;
@@ -1369,8 +1366,6 @@ a.text__line-block{
 	visibility: visible;
 	pointer-events: all;
 }
-
-
 
 .slider__info-title {
 	font-size: clamp(18px, 1vw, 20px);
@@ -1411,9 +1406,9 @@ a.text__line-block{
 }
 
 .slider__info-link-demo {
+	display:block;
 	background: #00192B;
 	color: #FFFFFF;
-	display: block;
 	flex: 0 1 60%;
 	text-align: center;
 }
