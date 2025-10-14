@@ -301,7 +301,7 @@ export const bestPartner={
 				rating: 5,
 				img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
 				bonus: "600% up to 4800$ + 255 Free Spins",
-				review: './caswino-casino-review',
+				review: './caswino-casino',
 				play: '',
 			},
 			{
@@ -309,7 +309,7 @@ export const bestPartner={
 				rating: 5,
 				img: { url: './img/partners/neospin.webp', alt: 'Neospin Casino Logo' },
 				bonus: "100% up to AU$6,000 + 100 Free Spins",
-				review: './neospin-casino-review',
+				review: './neospin-casino',
 				play: '',
 			},
 			{
@@ -317,7 +317,7 @@ export const bestPartner={
 				rating: 4.9,
 				img: { url: './img/partners/crown.webp', alt: 'CrownSlots Logo' },
 				bonus: "400% up to AU$4,000 + 250 Free Spins",
-				review: './crownslots-review',
+				review: './crownslots',
 				play: '',
 			},
 			{
@@ -325,7 +325,7 @@ export const bestPartner={
 				rating: 4.8,
 				img: { url: './img/partners/bgm.webp', alt: 'BDM bet Logo' },
 				bonus: "up to AU$4,000 + 150 Free Spins",
-				review: './bdm-bet-review',
+				review: './bdm-bet',
 				play: '',
 			},
 			{
@@ -333,7 +333,7 @@ export const bestPartner={
 				rating: 4.7,
 				img: { url: './img/partners/richard.webp', alt: 'Richard Casino Logo' },
 				bonus: "up to AU$5,000 + 500 Free Spins",
-				review: './richard-casino-review',
+				review: './richard-casino',
 				play: '',
 			},
 			{
@@ -341,7 +341,7 @@ export const bestPartner={
 				rating: 4.5,
 				img: { url: './img/partners/axe.webp', alt: 'Axe Casino Logo' },
 				bonus: "up to AU$5,625 + 200 Free Spins",
-				review: './axe-casino-review',
+				review: './axe-casino',
 				play: '',
 			},
 			{
@@ -349,7 +349,7 @@ export const bestPartner={
 				rating: 4.4,
 				img: { url: './img/partners/oscarspin.webp', alt: 'Oscarspin Logo' },
 				bonus: "up to AU$4,000 + 225 Free Spins",
-				review: './oscarspin-review',
+				review: './oscarspin',
 				play: '',
 			},
 			{
@@ -357,7 +357,7 @@ export const bestPartner={
 				rating: 4.3,
 				img: { url: './img/partners/sky.webp', alt: 'SkyCrown Logo' },
 				bonus: "up to AU$8,000 + 400 Free Spins",
-				review: './skycrown-review',
+				review: './skycrown',
 				play: '',
 			},
 			{
@@ -365,7 +365,7 @@ export const bestPartner={
 				rating: 4.2,
 				img: { url: './img/partners/hugo.webp', alt: 'Hugo casino Logo' },
 				bonus: "225% up to AU$1,000 + 275 Free Spins",
-				review: './hugo-casino-review',
+				review: './hugo-casino',
 				play: '',
 			},
 			{
@@ -373,7 +373,7 @@ export const bestPartner={
 				rating: 4,
 				img: { url: './img/partners/rockwin.webp', alt: 'Rockwin Casino Logo' },
 				bonus: "up to AU$6,000 + 400 Free Spins",
-				review: './rockwin-casino-review',
+				review: './rockwin-casino',
 				play: '',
 			},
 		],
@@ -383,7 +383,7 @@ export const bestPartner={
 				rating: 5,
 				img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
 				bonus: "600% up to 4800$ + 255 Free Spins",
-				review: './caswino-casino-review',
+				review: './caswino-casino',
 				play: '',
 			},
 			{
@@ -391,7 +391,7 @@ export const bestPartner={
 				rating: 5,
 				img: { url: './img/partners/neospin.webp', alt: 'Neospin Casino Logo' },
 				bonus: "100% up to AU$6,000 + 100 Free Spins",
-				review: './neospin-casino-review',
+				review: './neospin-casino',
 				play: '',
 			},
 			{
@@ -399,7 +399,7 @@ export const bestPartner={
 				rating: 4.9,
 				img: { url: './img/partners/crown.webp', alt: 'CrownSlots Logo' },
 				bonus: "400% up to AU$4,000 + 250 Free Spins",
-				review: './crownslots-review',
+				review: './crownslots',
 				play: '',
 			},
 			{
@@ -407,7 +407,7 @@ export const bestPartner={
 				rating: 4.8,
 				img: { url: './img/partners/bgm.webp', alt: 'BDM Bet Logo' },
 				bonus: "up to AU$4,000 + 150 Free Spins",
-				review: './bdm-bet-review',
+				review: './bdm-bet',
 				play: '',
 			},
 			{
@@ -415,7 +415,7 @@ export const bestPartner={
 				rating: 4.7,
 				img: { url: './img/partners/richard.webp', alt: 'Richard Casino Logo' },
 				bonus: "up to AU$5,000 + 500 Free Spins",
-				review: './richard-casino-review',
+				review: './richard-casino',
 				play: '',
 			},
 		],
@@ -425,7 +425,7 @@ export const bestPartner={
 				rating: 5,
 				img: { url: './img/partners/neospin.webp', alt: 'Neospin Casino Logo' },
 				bonus: "100% up to AU$6,000 + 100 Free Spins",
-				review: './neospin-casino-review',
+				review: './neospin-casino',
 				play: '',
 			},
 			{
@@ -433,7 +433,7 @@ export const bestPartner={
 				rating: 4.9,
 				img: { url:'./img/partners/crown.webp', alt: 'Neospin Casino Logo' },
 				bonus: "400% up to AU$4,000 + 250 Free Spins",
-				review: './crownslots-review',
+				review: './crownslots',
 				play: '',
 			},
 			{
@@ -441,7 +441,7 @@ export const bestPartner={
 				rating: 4.8,
 				img: { url: './img/partners/bgm.webp', alt: 'BDM Bet Logo' },
 				bonus: "up to AU$4,000 + 150 Free Spins",
-				review: './bdm-bet-review',
+				review: './bdm-bet',
 				play: '',
 			},
 			{
@@ -449,7 +449,7 @@ export const bestPartner={
 				rating: 4.4,
 				img: { url: './img/partners/oscarspin.webp', alt: 'Oscarspin Logo' },
 				bonus: "up to AU$4,000 + 225 Free Spins",
-				review: './oscarspin-review',
+				review: './oscarspin',
 				play: '',
 			},
 		],
@@ -459,7 +459,7 @@ export const bestPartner={
 				rating: 5,
 				img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
 				bonus: "600% up to 4800$ + 255 Free Spins",
-				review: './caswino-casino-review',
+				review: './caswino-casino',
 				play: '',
 			},
 			{
@@ -467,7 +467,7 @@ export const bestPartner={
 				rating: 5,
 				img: { url: './img/partners/neospin.webp', alt: 'Neospin Casino Logo' },
 				bonus: "100% up to AU$6,000 + 100 Free Spins",
-				review: './neospin-casino-review',
+				review: './neospin-casino',
 				play: '',
 			},
 			{
@@ -475,7 +475,7 @@ export const bestPartner={
 				rating: 4.9,
 				img: { url: './img/partners/crown.webp', alt: 'Neospin Casino Logo' },
 				bonus: "400% up to AU$4,000 + 250 Free Spins",
-				review: './crownslots-review',
+				review: './crownslots',
 				play: '',
 			},
 			{
@@ -483,7 +483,7 @@ export const bestPartner={
 				rating: 4.2,
 				img: { url: './img/partners/hugo.webp', alt: 'Hugo casino Logo' },
 				bonus: "225% up to AU$1,000 + 275 Free Spins",
-				review: './hugo-casino-review',
+				review: './hugo-casino',
 				play: '',
 			},
 			{
@@ -491,7 +491,7 @@ export const bestPartner={
 				rating: 4,
 				img: { url: './img/partners/rockwin.webp', alt: 'Rockwin Casino Logo' },
 				bonus: "up to AU$6,000 + 400 Free Spins",
-				review: './rockwin-casino-review',
+				review: './rockwin-casino',
 				play: '',
 			},
 		],
@@ -502,7 +502,7 @@ export const bestPartner={
 				rating: 5,
 				img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
 				bonus: "600% up to 4800$ + 255 Free Spins",
-				review: './caswino-casino-review',
+				review: './caswino-casino',
 				play: '',
 			},
 			{
@@ -510,7 +510,7 @@ export const bestPartner={
 				rating: 4.4,
 				img: { url: './img/partners/oscarspin.webp', alt: 'Oscarspin Logo' },
 				bonus: "up to AU$4,000 + 225 Free Spins",
-				review: './oscarspin-review',
+				review: './oscarspin',
 				play: '',
 			},
 			{
@@ -518,7 +518,7 @@ export const bestPartner={
 				rating: 4.3,
 				img: { url: './img/partners/sky.webp', alt: 'SkyCrown Logo' },
 				bonus: "up to AU$8,000 + 400 Free Spins",
-				review: './skycrown-review',
+				review: './skycrown',
 				play: '',
 			},
 			{
@@ -526,7 +526,7 @@ export const bestPartner={
 				rating: 4,
 				img: { url: './img/partners/rockwin.webp', alt: 'Rockwin Casino Logo' },
 				bonus: "up to AU$6,000 + 400 Free Spins",
-				review: './rockwin-casino-review',
+				review: './rockwin-casino',
 				play: '',
 			},
 		],
@@ -536,7 +536,7 @@ export const bestPartner={
 				rating: 5,
 				img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
 				bonus: "600% up to 4800$ + 255 Free Spins",
-				review: './caswino-casino-review',
+				review: './caswino-casino',
 				play: '',
 			},
 			{
@@ -544,7 +544,7 @@ export const bestPartner={
 				rating: 5,
 				img: { url: './img/partners/neospin.webp', alt: 'Neospin Casino Logo' },
 				bonus: "100% up to AU$6,000 + 100 Free Spins",
-				review: './neospin-casino-review',
+				review: './neospin-casino',
 				play: '',
 			},
 			{
@@ -552,7 +552,7 @@ export const bestPartner={
 				rating: 4.5,
 				img: { url: './img/partners/axe.webp', alt: 'Axe Casino Logo' },
 				bonus: "up to AU$5,625 + 200 Free Spins",
-				review: './axe-casino-review',
+				review: './axe-casino',
 				play: '',
 			},
 			{
@@ -560,7 +560,7 @@ export const bestPartner={
 				rating: 4.3,
 				img: { url: './img/partners/sky.webp', alt: 'SkyCrown Logo' },
 				bonus: "up to AU$8,000 + 400 Free Spins",
-				review: './skycrown-review',
+				review: './skycrown',
 				play: '',
 			},
 			{
@@ -568,7 +568,7 @@ export const bestPartner={
 				rating: 4,
 				img: { url: './img/partners/rockwin.webp', alt: 'Rockwin Casino Logo' },
 				bonus: "up to AU$6,000 + 400 Free Spins",
-				review: './rockwin-casino-review',
+				review: './rockwin-casino',
 				play: '',
 			},
 		],
@@ -578,7 +578,7 @@ export const bestPartner={
 				rating: 5,
 				img: { url: './img/partners/caswino.webp', alt: 'Caswino Casino Logo' },
 				bonus: "600% up to 4800$ + 255 Free Spins",
-				review: './caswino-casino-review',
+				review: './caswino-casino',
 				play: '',
 			},
 			{
@@ -586,7 +586,7 @@ export const bestPartner={
 				rating: 5,
 				img: { url: './img/partners/neospin.webp', alt: 'Neospin Casino Logo' },
 				bonus: "100% up to AU$6,000 + 100 Free Spins",
-				review: './neospin-casino-review',
+				review: './neospin-casino',
 				play: '',
 			},
 			{
@@ -594,7 +594,7 @@ export const bestPartner={
 				rating: 4.9,
 				img: { url: './img/partners/crown.webp', alt: 'CrownSlots Logo' },
 				bonus: "400% up to AU$4,000 + 250 Free Spins",
-				review: './crownslots-review',
+				review: './crownslots',
 				play: '',
 			},
 			{
@@ -602,7 +602,7 @@ export const bestPartner={
 				rating: 4.7,
 				img: { url: './img/partners/richard.webp', alt: 'Richard Casino Logo' },
 				bonus: "up to AU$5,000 + 500 Free Spins",
-				review: './richard-casino-review',
+				review: './richard-casino',
 				play: '',
 			},
 			{
@@ -610,7 +610,7 @@ export const bestPartner={
 				rating: 4.4,
 				img: { url: './img/partners/oscarspin.webp', alt: 'Oscarspin Logo' },
 				bonus: "up to AU$4,000 + 225 Free Spins",
-				review: './oscarspin-review',
+				review: './oscarspin',
 				play: '',
 			},
 			{
@@ -618,7 +618,7 @@ export const bestPartner={
 				rating: 4.3,
 				img: { url: './img/partners/sky.webp', alt: 'SkyCrown Logo' },
 				bonus: "up to AU$8,000 + 400 Free Spins",
-				review: './skycrown-review',
+				review: './skycrown',
 				play: '',
 			},
 		],
@@ -628,7 +628,7 @@ export const bestPartner={
 				rating: 4.5,
 				img: { url: './img/partners/axe.webp', alt: 'Axe Casino Logo' },
 				bonus: "up to AU$5,625 + 200 Free Spins",
-				review: './axe-casino-review',
+				review: './axe-casino',
 				play: '',
 			},
 			{
@@ -636,14 +636,14 @@ export const bestPartner={
 				rating: 4.4,
 				img: { url: './img/partners/oscarspin.webp', alt: 'Oscarspin Logo' },
 				bonus: "up to AU$4,000 + 225 Free Spins",
-				review: './oscarspin-review',
+				review: './oscarspin',
 				play: '',
 			},{
 				name: 'Rockwin Casino',
 				rating: 4,
 				img: { url: './img/partners/rockwin.webp', alt: 'Rockwin Casino Logo' },
 				bonus: "up to AU$6,000 + 400 Free Spins",
-				review: './rockwin-casino-review',
+				review: './rockwin-casino',
 				play: '',
 			},
 		]
