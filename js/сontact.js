@@ -17,3 +17,16 @@ checkbox.addEventListener('change', () => {
     // здесь можно выключить кнопку, изменить стиль и т.д.
   }
 });
+
+const form = document.getElementById('form-contact');
+const formComfirm = document.querySelector('.contact-form__confirmed');
+
+ form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    formComfirm.classList.add('active');
+    // if (checkbox.checked) {
+    //   console.log('Форма отправлена ✅');
+    // } else {
+    //   console.log('Сначала примите условия ❌');
+    // }
+  });
