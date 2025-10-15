@@ -190,7 +190,7 @@
         </div>
     </header>
     <section class="contact-form section fisrt-section">
-        <div class="container">
+        <div class="container-mini">
             <div class="contact-form__wrapper">
                 <nav class="breadcrumbs" aria-label="Breadcrumb">
                     <ol itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -227,14 +227,16 @@
                             <label for="Message">Message*</label>
                             <textarea maxlength="550" placeholder="Message"></textarea>
                         </div>
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider"></span>
-                        </label>
-                        <span class="terms-text">
-                            I accept <a href="#">Terms & Conditions</a>
-                        </span>
-                        <button type="submit">Send Message</button>
+                        <div class='contact-form__checkBocks'>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                            <span class="terms-text">
+                                I accept <a href="./terms-conditions" class="text__line-block">Terms & Conditions</a>
+                            </span>
+                        </div>
+                        <button class="contact-form__btn btn-yello" type="submit">Send</button>
                     </form>
                 </div>
                 <div class="contact-form__info">

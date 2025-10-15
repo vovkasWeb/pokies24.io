@@ -85,6 +85,12 @@ button {
 	padding: 0 15px;
 	margin: 0 auto;
 }
+.container-mini {
+	position: relative;
+	max-width: 1045px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
 
 .container-none {
 	padding: 0;
