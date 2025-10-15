@@ -73,7 +73,7 @@
 
 .hot-offers__cards{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: clamp(10px, 2vw, 20px);
 }
 .hot-offers__card{
@@ -120,10 +120,27 @@
     border-radius: 10px;
 }
 
+@media(max-width:1250px){
+    .hot-offers__card-link{
+        font-size: 12px;
+    }
+    .hot-offers__card-info span{
+        font-size: 13px;
+    }
+}
+
 
 @media (max-width: 1100px) {
-    .cards-free__wrapper{
+    .cards-free__wrapper,
+    .hot-offers__cards{
         flex-wrap: wrap;
+    }
+    .hot-offers__card-link {
+        font-size: 14px;
+    }
+
+    .hot-offers__card-info span {
+        font-size: 16px;
     }
 }
 @media (max-width: 900px) {
@@ -138,5 +155,13 @@
         max-width: none;
         height: 200px;
     }   
+    .hot-offers__card{
+        max-width: none;
+        width: 100%;
+        padding: 20px;
+    }
+    .hot-offers__card img{
+        height: 120px;
+    }
     
 }
