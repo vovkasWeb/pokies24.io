@@ -1,0 +1,185 @@
+.contact-form__line{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-form__title{
+    font-size: clamp(22px, 2.5vw, 36px);
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: clamp(5px, 2vw, 10px);
+    color: #fff;
+}
+.contact-form__text{
+    font-size: clamp(14px, 3vw, 16px);
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: clamp(5px, 3vw, 15px);
+    color: #fff;
+}
+.contact-form__form-line{
+    display: flex;
+    margin-bottom: clamp(5px, 2vw, 10px);
+}
+.contact-form__input-block + 
+.contact-form__input-block{
+    padding-left:8px;
+}
+.contact-form__input-block{
+    display: flex;
+    flex-direction: column;
+}
+.contact-form__input-block label{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: clamp(5px, 2vw, 10px);
+}
+
+.contact-form__input-block input,
+.contact-form__input-block textarea {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    border: 1px solid #BDD3E4;
+    color: #fff;
+    background: transparent;
+    outline: none;
+    width: 100%;
+}
+.contact-form__input-block input::placeholder{
+    color: #5E778A;
+}
+.contact-form__input-name{
+    flex: 0 0 40%
+}
+.contact-form__input-email{
+    flex: 0 0 60%
+}
+.contact-form__input-messege textarea{
+    width: 100%;
+    resize: none;
+    overflow-y: hidden;
+    min-height: 150px;
+    max-height: 400px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+    margin-right: 10px;
+}
+
+/* скрываем стандартный чекбокс */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* бегунок */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #163657;
+    /* тёмно-синий фон */
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+/* кружок внутри */
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    top: 4px;
+    background-color: #768b6e;
+    /* серо-зелёный кружок */
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+/* состояние checked */
+input:checked+.slider {
+    background-color: #ffd700;
+    /* жёлтый фон при активации */
+}
+
+input:checked+.slider::before {
+    transform: translateX(18px);
+    /* сдвигаем кружок вправо */
+}
+
+.terms-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.terms-text a {
+    color: #cbd5e1;
+    text-decoration: underline;
+}
+
+.conract-form__info-content{
+    padding: 30px;
+    border-radius: 17px;
+    border: 1px solid #57626C;
+    background: #092236;
+}
+.contact-form__info-title{
+    display: block;
+    font-size: clamp(16px, 2.5vw, 22px);
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: clamp(5px, 2vw, 15px);
+    color: #fff;
+}
+.contact-form__info-line{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contact-form__info-line span{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    color: #fff;
+}
+.contact-form__info-line svg{
+    width: 20px;
+    height: 20px;
+    flex: 0 0 auto;
+    display: inline-block;
+}
+.contact-form__info-btn{
+    margin-top: 20px;
+    display: flex;
+    background: #295374;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.contact-form__info-btn span{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #fff;
+}
+.contact-form__info-btn  svg{
+    width: 15px;
+    height: 15px;
+    flex: 0 0 auto;
+    display: inline-block;
+}
