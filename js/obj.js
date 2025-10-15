@@ -234,9 +234,9 @@ export const pagas={
 		// 	},
 		// }
 	},
-	'online-casino':{
+	'online-casinos':{
 		name: 'ONLINE CASINOS',
-		url: './online-casino',
+		url: './online-casinos',
 		pages:{},
 		// pages:{
 		// 	'recommended':{
