@@ -160,18 +160,8 @@
     overflow: hidden;
     gap: 10px;
     scroll-behavior: smooth;
-    position: relative;
 }
-.game-all__slider-wrapper::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: var(--after-width, 100px);
-    height: 100%;
-    pointer-events: none;
-    background: linear-gradient(90deg, rgba(0, 25, 43, 0) 29.33%, rgba(0, 25, 43, 0.752885) 82.69%, rgba(0, 25, 43, 0.9) 100%);
-}
+
 
 .game-all__slider-wrapper,
 .game-all__slider-item {
@@ -180,8 +170,19 @@
 }
 .game-all__slider{
     overflow: hidden;
-    /* max-width: 800px; */
+    position: relative;
     width: 100%;
+    padding-right: 1px;
+}
+.game-all__slider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 100px;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(90deg, rgba(0, 25, 43, 0) 29.33%, rgba(0, 25, 43, 0.752885) 82.69%, rgba(0, 25, 43, 0.9) 100%);
 }
 
 .game-all__slider-item {
