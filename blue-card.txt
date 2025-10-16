@@ -1,0 +1,56 @@
+ <div class="cards-free__wrapper">
+                    <div class="card-free__item">
+                        <span class="card-free__title">
+                          New Pokies 
+						</span>
+                        <a class="card-free__btn btn-yello" href="#" >
+                            Play free
+                        </a>
+                    </div>
+
+                    <div class="card-free__item">
+                        <span class="card-free__title">
+                          Popular Pokies 
+                        </span>
+                        <a class="card-free__btn btn-yello" href="#" >
+                            Play free
+                        </a>
+                    </div>
+
+                    <div class="card-free__item">
+                        <span class="card-free__title">
+                          Table Games 
+                        </span>
+                        <a class="card-free__btn btn-yello" href="#" >
+                            Play free
+                        </a>
+                    </div>
+
+                     <div class="card-free__item">
+                        <span class="card-free__title">
+                          Live Dealer
+                        </span>
+                        <a class="card-free__btn btn-yello" href="#" >
+                            Play free
+                        </a>
+                    </div>
+
+                    <div class="card-free__item">
+                        <span class="card-free__title">
+                          Crash Pokies
+                        </span>
+                        <a class="card-free__btn btn-yello" href="#" >
+                            Play free
+                        </a>
+                    </div>
+
+                    <div class="card-free__item">
+                        <span class="card-free__title">
+                            Pokies by Provider
+                        </span>
+                        <a class="card-free__btn btn-yello" href="#" >
+                            Play free
+                        </a>
+                    </div>
+
+                </div>
