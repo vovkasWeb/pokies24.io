@@ -42,8 +42,8 @@
     border: 2px solid #57626C;
 }
 
-.card-free__title{
-    font-size:26px;
+.card-free__title {
+    font-size: 26px;
     line-height: 140%;
     font-weight: 600;
     color: #fff;
@@ -53,8 +53,8 @@
     color: #FFD700;
 }
 
-.card-free__btn{
-    font-size: clamp(12px,2vw,16px);
+.card-free__btn {
+    font-size: clamp(12px, 2vw, 16px);
     font-weight: 600;
     line-height: 140%;
     color: #000000;
@@ -62,21 +62,22 @@
     border-radius: 10px;
 }
 
-.hot-offers__title{
+.hot-offers__title {
     font-size: clamp(18px, 4vw, 30px);
     font-weight: 700;
     line-height: 150%;
-    margin-bottom: clamp(20px, 3vw,40px);
+    margin-bottom: clamp(20px, 3vw, 40px);
     color: #fff;
     text-align: center;
 }
 
-.hot-offers__cards{
+.hot-offers__cards {
     display: flex;
     justify-content: center;
     gap: clamp(10px, 2vw, 20px);
 }
-.hot-offers__card{
+
+.hot-offers__card {
     max-width: 255px;
     width: 100%;
     height: auto;
@@ -85,11 +86,13 @@
     border: 1px solid #57626C;
     padding: 10px;
 }
-.hot-offers__card img{
+
+.hot-offers__card img {
     width: 100%;
     margin-bottom: 5px;
 }
-.hot-offers__card-info{
+
+.hot-offers__card-info {
     border-radius: 12px;
     background: #2F5776;
     display: flex;
@@ -97,7 +100,8 @@
     padding: 10px 12px;
     margin-bottom: 10px;
 }
-.hot-offers__card-info span{
+
+.hot-offers__card-info span {
     font-size: 16px;
     font-weight: 400;
     line-height: 140%;
@@ -105,12 +109,13 @@
     text-align: center;
 }
 
-.hot-offers__card-line{
+.hot-offers__card-line {
     display: flex;
     gap: 6px;
 
 }
-.hot-offers__card-link{
+
+.hot-offers__card-link {
     flex: 0 1 50%;
     font-size: 14px;
     line-height: 140%;
@@ -120,21 +125,157 @@
     border-radius: 10px;
 }
 
-@media(max-width:1250px){
-    .hot-offers__card-link{
+.game-all__line-filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-all__filter-slider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 850px;
+}
+
+.game-all-btn {
+    display: flex;
+    align-items: center;
+}
+
+.game-all-btn svg {
+    height: 16px;
+    width: 8px;
+    stroke: #B5BFC7;
+}
+.game-all__slider-wrapper {
+    display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        gap: 10px;
+        box-sizing: border-box;
+    
+        scroll-behavior: smooth;
+        /* плавная прокрутка */
+}
+.game-all__slider-wrapper,
+.game-all__slider-item {
+    box-sizing: border-box;
+}
+
+.game-all__slider-item {
+    background: url('../img/bg-btn.jpg');
+    padding: 11px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+    color: #9BADBB;
+    border-radius: 10px;
+    flex: 0 0 auto;
+}
+
+.game-all__provider {
+    position: relative;
+    flex: 0 0 30%;
+    
+}
+
+.game-all__open-provider {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #57626C;
+    border-radius: 10px;
+    padding: 12px 20px;
+}
+.game-all__open-provider.open {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: none;
+}
+
+.game-all__open-provider span {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+    color: #9BADBB;
+}
+
+.game-all__open-provider svg {
+    height: 19px;
+    width: 13px;
+}
+
+
+.game-all__provider-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #001C31;
+    opacity: 0;
+    transform: translateY(10px);
+    /* немного ниже */
+    transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: 2;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.game-all__provider-list.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    border: 1px solid #57626CCC;
+    border-top: none;
+}
+.game-all__provider-item{
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid #57626CCC;
+    color: #ffffff;
+}
+.game-all__provider-item svg{
+    fill: #ffffff;
+}
+.game-all__provider-item.active{
+    color:  #FFD700;
+    fill: #FFD700;
+}
+.game-all__provider-item.active svg{
+    fill: #FFD700;
+}
+.game-all__provider-item span{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 140%;
+    
+}
+
+
+
+
+@media(max-width:1250px) {
+    .hot-offers__card-link {
         font-size: 12px;
     }
-    .hot-offers__card-info span{
+
+    .hot-offers__card-info span {
         font-size: 13px;
     }
 }
 
 
 @media (max-width: 1100px) {
+
     .cards-free__wrapper,
-    .hot-offers__cards{
+    .hot-offers__cards {
         flex-wrap: wrap;
     }
+
     .hot-offers__card-link {
         font-size: 14px;
     }
@@ -143,25 +284,41 @@
         font-size: 16px;
     }
 }
+
 @media (max-width: 900px) {
-    .card-free__item{
+    .card-free__item {
         max-width: 170px;
+    }
+    .game-all__slider-wrapper {
+        overflow-x: auto;
+        /* включаем горизонтальный скролл пальцем */
+        -webkit-overflow-scrolling: touch;
+        /* плавный скролл на iOS */
+    }
+
+    .game-all__slider-wrapper::-webkit-scrollbar {
+        display: none;
+        /* скрываем полоску прокрутки */
     }
 }
 
-@media(max-width: 550px){
-    .card-free__item{
+@media(max-width: 550px) {
+    .card-free__item {
         width: 100%;
         max-width: none;
         height: 200px;
-    }   
-    .hot-offers__card{
+    }
+
+    .hot-offers__card {
         max-width: none;
         width: 100%;
         padding: 20px;
     }
-    .hot-offers__card img{
+
+    .hot-offers__card img {
         height: 120px;
     }
-    
+
+
+
 }
